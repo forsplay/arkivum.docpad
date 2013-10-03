@@ -1,0 +1,18 @@
+
+<div class="pure-g-r">
+	<div class="pure-u-1">
+		<span class="circle"></span>
+		<i class="trim"></i>
+		<i class="box"><i>
+			<ul class="sidebar-menu">
+				<li class="pure-menu-selected"><a href="/">Home</a></li>
+				<li><a href="#">Tour</a></li>
+					<% for document in @getCollection('pages').toJSON(): %>
+					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
+					<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
+				</li>
+				<% end %>
+			</ul>
+		</i><i></i><i></i></i>
+	</div>
+</div>

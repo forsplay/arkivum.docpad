@@ -1,6 +1,9 @@
 body {
     margin: 0 auto;
+    max-width: 1100px;
     line-height: 1.7em;
+    font-family: 'DINlight', arial;
+    background: #f4f4f4 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum_bg.jpg);
 }
 
 .l-box {
@@ -9,12 +12,40 @@ body {
 
 .header {
     margin: 0 0;
+    text-align: center;
 }
-
     .header .pure-menu {
+        z-index: 0;
+        color: #fff;
+        height: 93px;
         padding: 0.5em;
+        text-align: center;
+        font-family: 'DINmedium', arial;
+        background: #00a9c9 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-header_bg.png) repeat-x;
     }
-
+    .header .logo-block{
+        width: 194px;
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .header .pure-menu-heading{
+        padding: 0;
+        color: #fff;
+        font-size: 97%; 
+        text-align: left;
+        text-transform: none;
+    }
+        .header h1{
+            color: #fff;
+            font-family: 'DINmedium', arial;
+            padding: 0;
+            margin: 24px 0 0 0;
+            font-size: 308%;
+        }
+        .header .pure-menu.pure-menu-open.pure-menu-fixed{
+            border: 0;
+        }
         .header .pure-menu li a:hover,
         .header .pure-menu li a:focus {
             background: none;
@@ -28,9 +59,10 @@ body .primary-button {
 }
 
 .splash {
+    color: #464646;
     margin: 2em auto 0;
     padding: 3em 0.5em;
-    background: #eee;
+    font-family: "DINlight";
 }
     .splash .splash-head {
         font-size: 300%;
@@ -38,28 +70,138 @@ body .primary-button {
         line-height: 1.2em;
     }
     .splash .splash-subhead {
-        color: #999;
+        font-size: 234%;
         font-weight: 300;
         line-height: 1.4em;
-    }
-    .splash .primary-button {
-        font-size: 150%;
+        text-align: center;
     }
 
-
-.content .content-subhead {
-    color: #999;
-    padding-bottom: 0.3em;
-    text-transform: uppercase;
-    margin: 0;
-    border-bottom: 2px solid #eee;
-    display: inline-block;
+.sidebar{
+    margin:40px 0 0 0;
 }
+    .sidebar-menu{
+        z-index: 1;
+        margin:82px 0 0 0;
+        position: absolute;
+    }
+    .trim,.box,.circle {
+        position: relative;
+    }
+    .sidebar .box > i {
+        left: 0em;
+        width: 249px;
+        height: 777px;
+        margin: 0 9px;
+        position: absolute;
+        display: inline-block;
+        background-color: #e5e5e5;
+        top: 0.4444444444444444em;
+        border: 3px solid #cacaca;
+    }
+        .sidebar .box > i+i {
+            top: -14px;
+            left: 19px;
+            width: 209px;
+            height: 44px;
+            position: absolute;
+            display: inline-block;
+            background-color: #e5e5e5;
+            border-bottom: 0;
+            border-top: 3px solid #cacaca;
+            border-right: 3px solid #cacaca;
+            border-left: 3px solid #cacaca;
+        }
+        .sidebar .box > i+i+i {
+            top: -76px;
+            left: 69px;
+            width: 111px;
+            height: 111px;
+            line-height: 0;
+            position: absolute;
+            border-radius: 64px;
+            display: inline-block;
+            border: 3px solid #cacaca;
+        }
+    .sidebar .trim > i {
+        left: 0em;
+        width: 249px;
+        height: 777px;
+        margin: 0 0 0 17px;
+        position: absolute;
+        display: inline-block;
+        background-color: #e5e5e5;
+        top: 0.4444444444444444em;
+    }
+        .sidebar .trim > i+i {
+            width: 209px;
+            height: 44px;
+            margin: 0 0 0 33px;
+            position: absolute;
+            display: inline-block;
+            background-color: #e5e5e5;
+            top: 0.3333333333333333em;
+            left: 0.2222222222222222em;
+        }
+        .sidebar .trim > i+i+i {
+            top: -41px;
+            left: 62px;
+            width: 111px;
+            height: 111px;
+            line-height: 0;
+            border-radius: 64px;
+            position: absolute;
+            display: inline-block;
+            border: 0.611111111111111em solid #e5e5e5;
+        }
+    .sidebar .circle > i {
+        left: 0em;
+        width: 249px;
+        height: 777px;
+        position: absolute;
+        margin: 0 0 0 17px;
+        display: inline-block;
+        background-color: #e5e5e5;
+        top: 0.4444444444444444em;
+    }
+        .sidebar .circle > i+i {
+            width: 209px;
+            height: 44px;
+            margin: 0 0 0 33px;
+            position: absolute;
+            display: inline-block;
+            background-color: #e5e5e5;
+            left: 0.2222222222222222em;
+            top: 0.3333333333333333em;
+        }
+        .sidebar .circle > i+i+i {
+            top: -27px;
+            left: 77px;
+            height: 111px;
+            width: 111px;
+            line-height: 0;
+            position: absolute;
+            border-radius: 64px;
+            display: inline-block;
+            border: 0.611111111111111em solid #e5e5e5;
+        }
 
-.content .content-ribbon {
-    margin: 3em;
-    border-bottom: 1px solid #eee;
+.content{
+    background: #fff;
+    margin:53px 0 0 0;
 }
+    .content .content-subhead {
+        color: #999;
+        padding-bottom: 0.3em;
+        text-transform: uppercase;
+        margin: 0;
+        border-bottom: 2px solid #eee;
+        display: inline-block;
+    }
+
+    .content .content-ribbon {
+        margin: 3em;
+        border-bottom: 1px solid #eee;
+    }
 
 .ribbon {
     background: #eee;
@@ -73,9 +215,36 @@ body .primary-button {
     }
 
 .footer {
-    background: #111;
-    color: #666;
-    text-align: center;
     padding: 1em;
+    height: 77px;
+    color: #b6c6cc;
     font-size: 80%;
+    text-align: center;
+    background: #333 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png) repeat-x;
+}
+
+@font-face {
+    font-family: DINmedium;
+    src: url(https://googledrive.com/host/0B9LVk4xbDIJTcFpGeFR4OGFYcUk/DINPro-Medium.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family: DINlight;
+    src: url(https://googledrive.com/host/0B9LVk4xbDIJTcFpGeFR4OGFYcUk/DINPro-Light.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family: DINbold;
+    src: url(https://googledrive.com/host/0B9LVk4xbDIJTcFpGeFR4OGFYcUk/DINPro-Bold.ttf);
+    font-weight:400;
+}
+
+.font-DINbold{
+    font-family: "DINbold", arial; 
+}
+.font-DINlight{
+    font-family: "DINlight", arial; 
+}
+.font-DINmedium{
+    font-family: "DINmedium", arial; 
 }

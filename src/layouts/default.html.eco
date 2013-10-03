@@ -47,26 +47,28 @@
 <div class="content pure-g-r">
 	<div class="header pure-u-1">
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
-			<a class="pure-menu-heading" href="/">Your Site</a>
-
-			<ul>
-				<li class="pure-menu-selected"><a href="/">Home</a></li>
-				<li><a href="#">Tour</a></li>
-				<% for document in @getCollection('pages').toJSON(): %>
-					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-						<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
-					</li>
-				<% end %>
-			</ul>
+			<span class="logo-block">
+			<h1>Arkivum</h1>
+			<a class="pure-menu-heading" href="/">Every bit archived</a>
+			</span>
 		</div>
 	</div>
 
-	<%- @content %>
+	<div class="sidebar pure-u-1-4">
+		<%- @partial('left-sidebar') %>
+	</div>
+
+	<div class="stage pure-u-1-2">
+		<%- @content %>
+	</div>
+
+	<div class="sidebar pure-u-1-4">
+		<%- @partial('right-sidebar') %>
+	</div>
 
 	<div class="footer pure-u-1">
-		View the source of this layout to learn more. Made with love by the YUI Team. 
 		&copy; Company <%- (new Date()).getFullYear() %>.
-		This website was last updated at <%= @site.date.toISOString() %>
+		Website was last updated at <%= @site.date.toISOString() %>
 	</div>
 </div>
 
