@@ -38,12 +38,15 @@ docpadConfig = {
 
 			# Styles
 			styles: [
+				"https://googledrive.com/host/0B9LVk4xbDIJTdVROUVVuZW50RkE/link-effects_codrop.css"
 				"http://yui.yahooapis.com/pure/0.2.0/pure-min.css"
 				"styles/style.css"
 			]
 
 			# Scripts
 			scripts: [
+				"http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"
+				"https://googledrive.com/host/0B9LVk4xbDIJTejY4MmNBMzFoSkE/jquery-2.0.3.min.js"
 				"scripts/script.js"
 			]
 
@@ -112,6 +115,12 @@ docpadConfig = {
 					res.redirect(newUrl+req.url, 301)
 				else
 					next()
+
+	# Enabled Plugins
+	enabledPlugins: 
+		# Disable the basicAuth Plugin
+		circleeffects: false
+
 }
 
 

@@ -1,18 +1,21 @@
 
 <div class="pure-g-r">
 	<div class="pure-u-1">
-		<span class="circle"></span>
-		<i class="trim"></i>
-		<i class="box"><i>
-			<ul class="sidebar-menu">
+		<span class="box animated"><span>
+		<span class="trim animated"></span>
+		<span class="circBox animated"> <span class="circle">
+			<span id="confStamp"><%- @partial('confidential-stamp') %></span>
+		</span> </span>
+		<span class="3D-rollup_effect" id="3D-rollup_effect">
+			<ul class="sidebar-menu animated">
 				<li class="pure-menu-selected"><a href="/">Home</a></li>
 				<li><a href="#">Tour</a></li>
 					<% for document in @getCollection('pages').toJSON(): %>
-					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-					<a href="<%= document.url %>" property="dc:title"><%= document.title %></a>
+					<li typeof="sioc:Page" about="<%= document.url %>">
+					<a href="<%= document.url %>" property="dc:title"><span data-hover="<%= document.title %>"><%= document.title %></span></a>
 				</li>
 				<% end %>
 			</ul>
-		</i><i></i><i></i></i>
+		</span>
 	</div>
 </div>

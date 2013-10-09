@@ -48,13 +48,17 @@
 	<div class="header pure-u-1">
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
 			<span class="logo-block">
-			<h1>Arkivum</h1>
-			<a class="pure-menu-heading" href="/">Every bit archived</a>
+			<a class="pure-menu-heading" href="/">
+			<span class="slash"><%- @partial('arkivum-slash') %></span>
+			<span class="logo-class animated"><%- @partial('arkivum-logo') %></span>
+			<span class="slogan">Every bit archived</span>
+			<h1 class="opa-0">Arkivum</h1>
+			</a>
 			</span>
 		</div>
 	</div>
 
-	<div class="sidebar pure-u-1-4">
+	<div class="sidebar sidebar-left pure-u-1-4">
 		<%- @partial('left-sidebar') %>
 	</div>
 
@@ -62,7 +66,7 @@
 		<%- @content %>
 	</div>
 
-	<div class="sidebar pure-u-1-4">
+	<div class="sidebar sidebar-right pure-u-1-4">
 		<%- @partial('right-sidebar') %>
 	</div>
 

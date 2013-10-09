@@ -1,10 +1,12 @@
 
 <div class="pure-g-r">
 	<div class="pure-u-1">
-		<span class="circle"></span>
-		<i class="trim"></i>
-		<i class="box"><i>
-			<ul class="sidebar-menu">
+		<span class="box animated"><span>
+		<span class="trim animated"></span>
+		<span class="circBox animated"> <span class="circle">
+			<span id="isoStamp"><%- @partial('ISOcert-stamp') %></span>
+		</span> </span>
+			<ul class="sidebar-menu animated">
 				<li class="pure-menu-selected"><a href="/">Home</a></li>
 				<li><a href="#">Tour</a></li>
 					<% for document in @getCollection('pages').toJSON(): %>
@@ -13,6 +15,5 @@
 				</li>
 				<% end %>
 			</ul>
-		</i><i></i><i></i></i>
 	</div>
 </div>
