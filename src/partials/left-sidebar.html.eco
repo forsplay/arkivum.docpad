@@ -6,16 +6,18 @@
 		<span class="circBox animated"> <span class="circle">
 			<span id="confStamp"><%- @partial('confidential-stamp') %></span>
 		</span> </span>
-		<span class="3D-rollup_effect" id="3D-rollup_effect">
+		<nav class="cl-effect-2">
 			<ul class="sidebar-menu animated">
-				<li class="pure-menu-selected"><a href="/">Home</a></li>
-				<li><a href="#">Tour</a></li>
+				<li class="pure-menu-selected"><a href="/"><span data-hover="Home">Home</span></a></li>
+				<li><a href="#"><span data-hover="Tour">Tour</span></a></li>
 					<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>">
-					<a href="<%= document.url %>" property="dc:title"><span data-hover="<%= document.title %>"><%= document.title %></span></a>
+					<a href="<%= document.url %>" property="dc:title">
+						<span data-hover="<%= document.title %>"><%= document.title %></span>
+					</a>
 				</li>
 				<% end %>
 			</ul>
-		</span>
+		</nav>
 	</div>
 </div>

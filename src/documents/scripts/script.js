@@ -9,11 +9,11 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 	  		marginLeft: '-23px'
 	  	},
 	    duration: 0.777,
-	    easing: Y.Easing.backBoth
+	    easing: Y.Easing.bounceBoth
 	  });
 	slashIn.run();
 
-		// Arkivum slash exit animation
+	// Arkivum slash exit animation
 	var slashOut = new Y.Anim(
 	  {
 	  	node: '#slash',
@@ -22,7 +22,7 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 	  		marginLeft: '-51px'
 	  	},
 	    duration: 0.777,
-	    easing: Y.Easing.backOut
+	    easing: Y.Easing.bounceOut
 	  });
 	  Y.on('beforeunload', function(){
 	  	 slashOut.run();
@@ -52,11 +52,13 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 		Y.all('.circBox').addClass('fixed-circ');
 		Y.one('#confidentialStamp').setStyles({
 			height: '128%',
-			width: '128%'
+			width: '128%',
+			marginLeft: '-17px'
 		});
 		Y.one('#ISOcertStamp').setStyles({
 			height: '148%',
-			width: '148%'
+			width: '148%',
+			marginLeft: '-21px'
 		});
 		Y.one('.pure-menu').setStyles({
 			height: '57px',
@@ -79,11 +81,13 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 		Y.all('.circBox').removeClass('fixed-circ');
 		Y.one('#confidentialStamp').setStyles({
 			height: '119%',
-			width: '119%'
+			width: '119%',
+			marginLeft: '-13px'
 		});
 		Y.one('#ISOcertStamp').setStyles({
 			height: '139%',
-			width: '139%'
+			width: '139%',
+			marginLeft: '-20px'
 		});
 		Y.one('.pure-menu').setStyles({
 			height: '113px',

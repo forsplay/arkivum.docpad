@@ -38,15 +38,16 @@ docpadConfig = {
 
 			# Styles
 			styles: [
-				"https://googledrive.com/host/0B9LVk4xbDIJTdVROUVVuZW50RkE/link-effects_codrop.css"
 				"http://yui.yahooapis.com/pure/0.2.0/pure-min.css"
 				"styles/style.css"
+				"styles/component.css"
 			]
 
 			# Scripts
 			scripts: [
 				"http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"
 				"https://googledrive.com/host/0B9LVk4xbDIJTejY4MmNBMzFoSkE/jquery-2.0.3.min.js"
+				"https://googledrive.com/host/0B9LVk4xbDIJTNGlYY19oZWY3MGM/modernizr.custom.js"
 				"scripts/script.js"
 			]
 
@@ -116,10 +117,22 @@ docpadConfig = {
 				else
 					next()
 
+	# =================================
+    # Plugin Configuration
+
+    # Skip Unsupported Plugins
+    # Set to `false` to load all plugins whether or not they are compatible with our DocPad version or not
+    skipUnsupportedPlugins: false  # default: true
+
 	# Enabled Plugins
 	enabledPlugins: 
-		# Disable the basicAuth Plugin
+		# False to disable. True to enable. 
 		circleeffects: false
+
+	plugins:
+	    ghpages:
+	        deployRemote: 'origin'
+	        deployBranch: 'gh-pages'
 
 }
 

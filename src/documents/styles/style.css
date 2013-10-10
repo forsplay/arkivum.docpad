@@ -104,11 +104,27 @@ body .primary-button {
         margin:82px 0 0 0;
         position: absolute;
         list-style: none;
+        padding: 0;
+        width: 100%;
+        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+        border-top: 1px solid rgb(225, 227, 230);
+        border-bottom: 1px solid rgb(225, 227, 230);
+        padding: 11px 0;
+    }
+    .sidebar-menu span{
+        width: 100%;
+        margin: 7px 0;
+        text-align: center;
+        border: 1px solid rgb(235, 235, 235);
+        border-left: none;
+        border-right: none;
     }
     .sidebar-menu a{
         font-weight: bold;
         text-decoration: none;
-        color: rgba(0, 43, 71, 0.9);
+        color: rgba(55, 60, 63, 0.9);
+        width: 100%;
+        margin:0;
     }
     .sidebar .box {
         width: 249px;
@@ -252,7 +268,7 @@ body .primary-button {
         float: left;
         width: 30px;
         height: 93%;
-        margin: -82px 0 0 0;
+        margin: -82px 0 0 13px;
     }
     #slash_path{
         fill:#fff;
