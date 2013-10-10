@@ -5,8 +5,8 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 	  {
 	  	node: '#slash',
 	  	to: {
-	  		marginTop: '2%',
-	  		marginLeft: '-15px'
+	  		marginTop: '0%',
+	  		marginLeft: '-23px'
 	  	},
 	    duration: 0.777,
 	    easing: Y.Easing.backBoth
@@ -58,18 +58,20 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 			height: '148%',
 			width: '148%'
 		});
-		Y.one('.pure-menu').setStyle('height', '46px');
+		Y.one('.pure-menu').setStyles({
+			height: '57px',
+			'box-shadow': 'rgb(232, 232, 242) 0px 21px'
+			});
 		Y.one('#logo_svg').setStyles({
 			height: '93%',
 			width: '93%',
-			marginTop: '-18px',
-			marginBottom: '13px'
+			margin: '-23px 0 13px -11px'
 		});
 		Y.one('.slogan').setStyles({
-			margin: '-18px 0 0 -108px',
-			color: 'rgb(63, 128, 172)'
+			margin: '-14px 0 0 -94px',
+			color: 'rgb(81, 115, 138)'
 		});
-		Y.one('#slash').setStyle('margin', '-3% 0 0 -10px')
+		Y.one('#slash').setStyle('margin', '-8% 0 0 -10px')
 	}
 
 	function scrolledTop(){
@@ -83,18 +85,20 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 			height: '139%',
 			width: '139%'
 		});
-		Y.one('.pure-menu').setStyle('height', 'inherit');
+		Y.one('.pure-menu').setStyles({
+			height: '113px',
+			'box-shadow': 'rgb(255, 255, 255) 0px 21px'
+			});
 		Y.one('#logo_svg').setStyles({
 			height: '93%',
 			width: '93%',
-			marginTop: '0',
-			marginBottom: 'inherit'
+			margin: '0 0 0 -9px'
 		});
 		Y.one('.slogan').setStyles({
-			margin: '-7px 0 0 -114px',
+			margin: '-3px 0 0 -107px',
 			color: 'inherit'
 		});
-		Y.one('#slash').setStyle('margin','2% 0px 0px -15px');
+		Y.one('#slash').setStyle('margin','0% 0 0 -23px');
 	}
 
 	Y.on('scroll', function(){

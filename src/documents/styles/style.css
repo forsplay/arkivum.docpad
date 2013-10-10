@@ -26,7 +26,7 @@ a{
     .header .pure-menu {
         z-index: 0;
         color: #fff;
-        height: 93px;
+        height: 113px;
         padding: 0.5em;
         text-align: center;
         font-family: 'DINmedium', arial;
@@ -36,14 +36,14 @@ a{
     .header .logo-block{
         display: block;
         text-align: center;
-        margin: -18px auto 0 auto;
+        margin: auto;
         width: 309px;
         height: 69px;
         padding: 0 0 0 53px;
     }
     .header .slogan{
         float: left;
-        margin: -7px 0 0 -114px;
+        margin: -5px 0 0 -106px;
         width: 177%;
         padding: 0 0 0 30%;
     }
@@ -246,7 +246,7 @@ body .primary-button {
         width: 93%;
         height: 93%;
         float: left;
-        margin: 0 0 0 -15px;
+        margin: 0 0 0 -9px;
     }
     #slash{
         float: left;
@@ -313,3 +313,22 @@ body .primary-button {
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
+.youtube-embed{
+    opacity: 0.7;
+}
+    .youtube-embed:hover{
+        opacity: 1;
+    }
+#youtubeEmbed{
+    margin: 222px 0px;
+    border-top: 3px solid rgb(184, 184, 184);
+    border-right: 3px solid rgb(111, 111, 111);
+    border-left: 3px solid rgb(199, 199, 199);
+    border-bottom: 3px solid rgb(155, 155, 155);
+}
+    #youtubeEmbed:hover{
+        border-top: 3px solid rgb(84, 84, 84);
+        border-right: 3px solid rgb(33, 33, 33);
+        border-left: 3px solid rgb(111, 111, 111);
+        border-bottom: 3px solid rgb(55, 55, 55);
+    }

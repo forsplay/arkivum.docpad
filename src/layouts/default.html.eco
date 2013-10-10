@@ -46,12 +46,12 @@
 <!-- Markup -->
 <div class="content pure-g-r">
 	<div class="header pure-u-1">
-		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal animated">
 			<span class="logo-block">
 			<a class="pure-menu-heading" href="/">
 			<span class="slash"><%- @partial('arkivum-slash') %></span>
-			<span class="logo-class animated"><%- @partial('arkivum-logo') %></span>
-			<span class="slogan">Every bit archived</span>
+			<span class="logo-class"><%- @partial('arkivum-logo') %></span>
+			<span class="slogan animated">Every bit archived</span>
 			<h1 class="opa-0">Arkivum</h1>
 			</a>
 			</span>
