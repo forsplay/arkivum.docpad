@@ -60,7 +60,7 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 		});
 		Y.one('.pure-menu').setStyles({
 			height: '57px',
-			'box-shadow': 'rgb(232, 232, 242) 0px 21px'
+			'box-shadow': 'rgb(252, 252, 255) 0px 21px'
 			});
 		Y.one('#logo_svg').setStyles({
 			height: '93%',
