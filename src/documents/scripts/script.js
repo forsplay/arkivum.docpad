@@ -73,7 +73,30 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 			margin: '-14px 0 0 -94px',
 			color: 'rgb(81, 115, 138)'
 		});
-		Y.one('#slash').setStyle('margin', '-8% 0 0 -10px')
+		Y.one('#slash').setStyle('margin', '-8% 0 0 -10px');
+		Y.all('.sidebar-menu').setStyles({
+			//margin: '95px 0 0 0',
+			padding: '0'
+		});
+		Y.all('#menu-hr-top').setStyles({
+			margin: '7px 0 0 0'
+		});
+		Y.all('.sidebar-menu span').setStyles({
+			margin: '4px 0'
+		});
+		Y.all('.sidebar-menu a').setStyles({
+			fontSize: '89%'
+		});
+		Y.all('.sidebar-menu .menu-icon').setStyles({
+			margin: '9px 0 0 -4px'
+		});
+		/* Y.all('.sidebar-menu bdi').setStyles({
+			borderTop: '#000',
+			borderBottom: '#00'
+		}); */
+		Y.all('.cl-effect-2 a').setStyles({
+			lineHeight: '33px'
+		});
 	}
 
 	function scrolledTop(){
@@ -103,6 +126,29 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 			color: 'inherit'
 		});
 		Y.one('#slash').setStyle('margin','0% 0 0 -23px');
+		Y.all('.sidebar-menu').setStyles({
+			//margin: '82px 0 0 0',
+			padding: '11px 0'
+		});
+		Y.all('#menu-hr-top').setStyles({
+			margin: '3px 0 0 0'
+		});
+		Y.all('.sidebar-menu span').setStyles({
+			margin: '7px 0'
+		});
+		Y.all('.sidebar-menu a').setStyles({
+			fontSize: '100%'
+		});
+		Y.all('.sidebar-menu .menu-icon').setStyles({
+			margin: '14px 0 0 -4px'
+		});
+		/* Y.all('.sidebar-menu bdi').setStyles({
+			borderTop: 'rgb(235, 235, 235)',
+			borderBottom: 'rgb(235, 235, 235)'
+		}); */
+		Y.all('.cl-effect-2 a').setStyles({
+			lineHeight: '44px'
+		});
 	}
 
 	Y.on('scroll', function(){
