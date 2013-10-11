@@ -1,4 +1,4 @@
-YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
+YUI().use('node', 'event', 'anim', /*'node-event-simulate',*/ 'button', function (Y) {
 
 	// Arkivum slash enter animation
 	var slashIn = new Y.Anim(
@@ -97,6 +97,9 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 		Y.all('.cl-effect-2 a').setStyles({
 			lineHeight: '33px'
 		});
+		Y.one('.pinboard').setStyles({
+			opacity: '0.777'
+		});
 	}
 
 	function scrolledTop(){
@@ -149,12 +152,38 @@ YUI().use('node', 'event', 'anim', 'node-event-simulate', function (Y) {
 		Y.all('.cl-effect-2 a').setStyles({
 			lineHeight: '44px'
 		});
+		Y.one('.pinboard').setStyles({
+			opacity: '0'
+		});
 	}
 
-	Y.on('scroll', function(){
-		document.documentElement.scrollTop || document.body.scrollTop < 88 ?
-			scrolledTop()
-		:   scrolledPast();
-	});
+	function scrollCheck(){
+		Y.on('scroll', function(){
+			document.documentElement.scrollTop || document.body.scrollTop < 88 ?
+				scrolledTop()
+			:   scrolledPast();
+		});
+	}
+
+	function toggleSidebar(){
+		Y.all('.circBox').toggleClass('fixed-circ');
+		Y.all('.trim').toggleClass('fixed-trim');
+		Y.all('.box').toggleClass('fixed');
+	}
+
+	var pinBtn = new Y.ToggleButton({
+		srcNode:'.pinboard-btn',
+		after:{
+			'pressedChange': function(){
+				var button = this,
+				pressed = button.get('pressed');
+			scrollCheck();
+			toggleSidebar();
+			}
+		}
+	}).render();
+
+	var pressed = pinBtn.get('pressed');
+    pinBtn.set('pressed', !pressed);
 
 });

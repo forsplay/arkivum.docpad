@@ -12,6 +12,27 @@
 		<span>
 			<span class="circ-deco">. . . ___ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub>*</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___ . . .</span>
 			<hr id="menu-hr-top" class="sidebar-hr"/>
+			<span class="share">
+				<div class="cl-effect-2-right">
+					<span class="share-icon-box icon-share-box">
+						<!-- <div class="bullet-box-share bullet-box-sh"> </div> -->
+						<%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
+					</span>
+					<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
+						<div class="bullet-box-share bullet-box-yt"> </div>
+						<%- @getIconmonstrBlock('youtube4','shareIcon','share-icon yt-icon') %>
+					</span></a>
+					<a href="https://twitter.com/Arkivum"><span class="share-icon-box">
+						<div class="bullet-box-share bullet-box-tw"> </div>
+						<%- @getIconmonstrBlock('twitter4','shareIcon','share-icon') %>
+					</span></a>
+					<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
+						<div class="bullet-box-share bullet-box-ln"> </div>
+						<%- @getIconmonstrBlock('linkedin4','shareIcon','share-icon') %>
+					</span></a>
+				</div>
+			</span>
+			<hr id="menu-hr-bottom" class="sidebar-hr"/>
 		</span>
 		<span class="youtube-embed">
 			<iframe class="animated"id="youtubeEmbed" width="244" height="170" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>

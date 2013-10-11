@@ -144,6 +144,67 @@ body .primary-button {
         stroke-width: 17px;
         opacity: 0.97;
     }
+        .share-icon{
+            position: absolute;
+            width: 71px;
+            height: 5%;
+            fill: #A3A8AC;
+            margin: -14px 0 0 -30px;
+            opacity: 0.777;
+        }
+        .yt-icon{
+            opacity: 1;
+        }
+        .icon-share{
+            height: 39px;
+            width: 12%;
+            margin: -13px 0 0 -8px;
+            fill:#fff;
+        }
+            .icon-share-box{
+                background: #A3A8AC !important;
+            }
+        .share-icon-box{
+            background: #fafafa url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+            height: 36px;
+            width: 36px;
+            display: block;
+            border-radius: 50%;
+            margin: 5px 0 0 19px;
+            padding: 13px;
+            opacity: 0.777;
+            float: left;
+        }
+        .bullet-box-share{
+            position: absolute;
+            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+            height: 55px;
+            width: 18%;
+            z-index: 0;
+        }
+           /* .bullet-box-sh{
+                margin: -21px 0 0 -17px;
+            } */
+            .bullet-box-yt{
+                margin: -21px 0 0 -17px;
+            }
+            .bullet-box-tw{
+                margin: -21px 0 0 -17px;
+            }
+            .bullet-box-ln{
+                margin: -21px 0 0 -17px;
+            }
+        .share{
+            height: 55px;
+            width: 100%;
+            display: block;
+            list-style: none;
+            margin: 0;
+            padding: 4px 3px;
+            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/extra_clean_paper.png);
+            border-top: 1px solid rgb(225, 227, 230);
+            border-bottom: 1px solid rgb(225, 227, 230);
+        }
     .sidebar-hr{
         height: 11px;
         background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
@@ -154,6 +215,11 @@ body .primary-button {
     }
     #menu-hr-top{
         margin: 3px 0 0 0;
+        opacity: 0.1;
+        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);
+    }
+    #menu-hr-bottom{
+        margin: 0 0 13px 0;
         opacity: 0.1;
         background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);
     }
@@ -172,6 +238,19 @@ body .primary-button {
         color: rgb(195, 198, 202);
     }
         .circ-deco sub{color:rgb(126, 132, 136);}
+    .pinboard{
+        position: fixed;
+        top: 0;
+        margin: 32px 7px 7px 3px;
+        z-index: 3;
+        opacity: 0;
+    }
+        .pinboard-btn{
+            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+            border: 1px solid rgb(214, 218, 223);
+            margin: -2px 0 0 -3px;
+            border-left: 0;
+        }
     .sidebar .box {
         width: 249px;
         height: 777px;
@@ -382,7 +461,7 @@ body .primary-button {
         opacity: 1;
     }
 #youtubeEmbed{
-    margin: 222px 0px;
+    margin:0;
     border-top: 3px solid rgb(184, 184, 184);
     border-right: 3px solid rgb(111, 111, 111);
     border-left: 3px solid rgb(199, 199, 199);
@@ -481,3 +560,68 @@ nav a:focus {
     width: 98%;
     margin: 0 2px;
 }
+
+/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
+/*
+.cl-effect-2-right a {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.cl-effect-2-right a span {
+    position: relative;
+    display: inline-block;
+    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.csstransforms3d .cl-effect-2-right a span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+
+.cl-effect-2-right a:hover span,
+.cl-effect-2-right a:focus span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+}
+
+.csstransforms3d .cl-effect-2-right a:hover span::before,
+.csstransforms3d .cl-effect-2-right a:focus span::before {
+    color:#000;
+    width: 99%;
+    border: 1px solid rgb(222, 222, 222);
+    border-left: none;
+    border-right: none;
+    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);    
+}
+
+.csstransforms3d .cl-effect-2-right a:hover,
+.csstransforms3d .cl-effect-2-right a:focus {
+
+}
+*/
