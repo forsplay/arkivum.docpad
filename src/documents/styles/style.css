@@ -3,13 +3,14 @@ body {
     max-width: 1100px;
     line-height: 1.7em;
     font-family: 'DINlight', arial;
-    -webkit-backface-visibility: hidden; /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
-    background: #f9f9f9 /* original design background image url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum_bg.jpg) */;
+    /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden; 
+    background: #f9f9f9;
 }
 
 ::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(222,222,222,1) url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/brushed_alu.png);}
 ::-webkit-scrollbar{width:17px;background:rgba(222,222,222,1) url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/brushed_alu.png);}
-::-webkit-scrollbar-thumb{background:#fafafa url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/brushed_alu_dark.png);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb{background:#fafafa url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
 
 a{
     color:rgba(63, 128, 172, 0.9);
@@ -30,7 +31,6 @@ a{
         padding: 0.5em;
         text-align: center;
         font-family: 'DINmedium', arial;
-        box-shadow: rgb(255, 255, 255) 0px 21px;
         background: #00a9c9 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-header_bg.png) repeat-x;
     }
     .header .logo-block{
@@ -106,7 +106,6 @@ body .primary-button {
         list-style: none;
         padding: 0;
         width: 100%;
-        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/extra_clean_paper.png);
         border-top: 1px solid rgb(225, 227, 230);
         border-bottom: 1px solid rgb(225, 227, 230);
         padding: 11px 0;
@@ -127,11 +126,9 @@ body .primary-button {
         margin:0;
     }
     .sidebar-menu bdi{
-        border-top: 1px solid rgb(235, 235, 235);
         width: 100%;
         display: block;
         padding:  0 0 0 13px;
-        border-bottom: 1px solid rgb(235, 235, 235);
     }
     .sidebar-menu .menu-icon{
         position: absolute;
@@ -165,7 +162,7 @@ body .primary-button {
                 background: #A3A8AC !important;
             }
         .share-icon-box{
-            background: #fafafa url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
+            background: #fafafa;
             height: 36px;
             width: 36px;
             display: block;
@@ -175,25 +172,7 @@ body .primary-button {
             opacity: 0.777;
             float: left;
         }
-        .bullet-box-share{
-            position: absolute;
-            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
-            height: 55px;
-            width: 18%;
-            z-index: 0;
-        }
-           /* .bullet-box-sh{
-                margin: -21px 0 0 -17px;
-            } */
-            .bullet-box-yt{
-                margin: -21px 0 0 -17px;
-            }
-            .bullet-box-tw{
-                margin: -21px 0 0 -17px;
-            }
-            .bullet-box-ln{
-                margin: -21px 0 0 -17px;
-            }
+
         .share{
             height: 55px;
             width: 100%;
@@ -201,56 +180,10 @@ body .primary-button {
             list-style: none;
             margin: 0;
             padding: 4px 3px;
-            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/extra_clean_paper.png);
             border-top: 1px solid rgb(225, 227, 230);
             border-bottom: 1px solid rgb(225, 227, 230);
         }
-    .sidebar-hr{
-        height: 11px;
-        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
-        margin: 0;
-        width: 100%;
-        border: 0;
-        border-top: 1px solid rgb(229, 234, 238);
-    }
-    #menu-hr-top{
-        margin: 3px 0 0 0;
-        opacity: 0.1;
-        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);
-    }
-    #menu-hr-bottom{
-        margin: 0 0 13px 0;
-        opacity: 0.1;
-        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);
-    }
-    .bullet-box{
-        position: absolute;
-        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/pw_pattern.png);
-        height: 102%;
-        width: 17%;
-        margin: -8px 0 0 -52px;
-    }
-    .circ-deco{
-        width: 100%;
-        display: block;
-        text-align: center;
-        margin: 33px 0 0 0;
-        color: rgb(195, 198, 202);
-    }
-        .circ-deco sub{color:rgb(126, 132, 136);}
-    .pinboard{
-        position: fixed;
-        top: 0;
-        margin: 32px 7px 7px 3px;
-        z-index: 3;
-        opacity: 0;
-    }
-        .pinboard-btn{
-            background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
-            border: 1px solid rgb(214, 218, 223);
-            margin: -2px 0 0 -3px;
-            border-left: 0;
-        }
+
     .sidebar .box {
         width: 249px;
         height: 777px;
@@ -259,7 +192,7 @@ body .primary-button {
         display: inline-block;
         top: 0.4444444444444444em;
         border-top: 3px solid #8BA1A3;
-        background: #e5e5e5 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/rockywall.png);
+        background: #e5e5e5;
     }
         .sidebar-left .box{
             border-top: 3px solid #8BA1A3;
@@ -271,47 +204,6 @@ body .primary-button {
             border-right: 3px solid #7F9294;
             border-left: 3px solid #D4D7D8;
         }
-        .sidebar .trim {
-            width: 209px;
-            height: 44px;
-            border-bottom: 0;
-            margin: -24px 0 0 18px;
-            position: absolute;
-            display: inline-block;
-            background: #e5e5e5 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/rockywall.png);
-        }
-        .sidebar-left .trim{
-            border-top: 3px solid #8BA1A3;
-            border-right: 3px solid #cacaca;
-            border-left: 3px solid #9EB1B3;
-        }
-        .sidebar-right .trim{
-            border-top: 3px solid #8BA1A3;
-            border-right: 3px solid #9EB1B3;
-            border-left: 3px solid #cacaca;
-        }
-        .sidebar .circle {
-            top: -76px;
-            left: 69px;
-            width: 111px;
-            height: 111px;
-            line-height: 0;
-            position: absolute;
-            border-radius: 64px;
-            display: inline-block;
-            background-color: #e5e5e5;
-        }
-            .sidebar-left .circle{
-                background-image: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/linen.png);
-            }
-            .sidebar-right .circle{
-                background-image: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/worn_dots.png);
-            }
-        .circ{
-            width: 111px;
-            height: 111px;
-        }
-
 .content{
     background: #fff;
     margin:53px 0 0 0;
@@ -473,155 +365,3 @@ body .primary-button {
         border-left: 3px solid rgb(111, 111, 111);
         border-bottom: 3px solid rgb(55, 55, 55);
     }
-
-/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
-*,
-*:after,
-*::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-nav a {
-    position: relative;
-    display: inline-block;
-    margin: 15px 25px;
-}
-
-nav a:hover,
-nav a:focus {
-    outline: none;
-}
-
-.cl-effect-2 a {
-    line-height: 44px;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-}
-
-.cl-effect-2 a span {
-    position: relative;
-    display: inline-block;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.csstransforms3d .cl-effect-2 a span::before {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0 0 0 64px !important;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);
-    content: attr(data-hover);
-    -webkit-transition: background 0.3s;
-    -moz-transition: background 0.3s;
-    transition: background 0.3s;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-}
-
-.cl-effect-2 a:hover span,
-.cl-effect-2 a:focus span {
-    -webkit-transform: rotateX(90deg) translateY(-22px);
-    -moz-transform: rotateX(90deg) translateY(-22px);
-    transform: rotateX(90deg) translateY(-22px);
-}
-
-.csstransforms3d .cl-effect-2 a:hover span::before,
-.csstransforms3d .cl-effect-2 a:focus span::before {
-    color:#000;
-    width: 99%;
-    margin-left: 2px;
-    border: 1px solid rgb(222, 222, 222);
-    border-left: none;
-    border-right: none;
-    padding: 0 0 0 64px !important;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);    
-}
-
-.csstransforms3d .cl-effect-2 a:hover,
-.csstransforms3d .cl-effect-2 a:focus {
-    width: 98%;
-    margin: 0 2px;
-}
-
-/* Effect 2: 3D rolling links, idea from http://hakim.se/thoughts/rolling-links */
-/*
-.cl-effect-2-right a {
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-}
-
-.cl-effect-2-right a span {
-    position: relative;
-    display: inline-block;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/lightpaperfibers.png);
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.csstransforms3d .cl-effect-2-right a span::before {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);
-    content: attr(data-hover);
-    -webkit-transition: background 0.3s;
-    -moz-transition: background 0.3s;
-    transition: background 0.3s;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-}
-
-.cl-effect-2-right a:hover span,
-.cl-effect-2-right a:focus span {
-    -webkit-transform: rotateX(90deg) translateY(-22px);
-    -moz-transform: rotateX(90deg) translateY(-22px);
-    transform: rotateX(90deg) translateY(-22px);
-}
-
-.csstransforms3d .cl-effect-2-right a:hover span::before,
-.csstransforms3d .cl-effect-2-right a:focus span::before {
-    color:#000;
-    width: 99%;
-    border: 1px solid rgb(222, 222, 222);
-    border-left: none;
-    border-right: none;
-    background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/paper_fibers.png);    
-}
-
-.csstransforms3d .cl-effect-2-right a:hover,
-.csstransforms3d .cl-effect-2-right a:focus {
-
-}
-*/

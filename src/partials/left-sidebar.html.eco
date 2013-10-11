@@ -2,23 +2,10 @@
 <div class="pure-g-r">
 	<div class="pure-u-1">
 		<span class="box animated"><span>
-		<span class="trim animated">
-			<span class="pinboard animated">
-				<button class="pure-button pinboard-btn">x</button>
-			</span>
-			<hr class="sidebar-hr"/>
-		</span>
-		<span class="circBox animated"> <span class="circle">
-			<span id="confStamp"><%- @partial('confidential-stamp') %></span>
-		</span> </span>
-		<hr class="sidebar-hr"/>
-		<nav class="cl-effect-2">
-			<span class="circ-deco">. . . ___ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <sub>*</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ___ . . .</span>
-			<hr id="menu-hr-top" class="sidebar-hr"/>
+		<nav>
 			<ul class="sidebar-menu animated">
 				<li class="pure-menu-selected"><a href="/">
 					<span class="animated" data-hover="Home">
-						<div class="bullet-box"> </div>
 						<div>
 							<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
 						</div>
@@ -29,7 +16,6 @@
 				</a></li>
 				<li><a href="#">
 					<span class="animated" data-hover="Tour">
-						<div class="bullet-box"> </div>
 						<div>
 							<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
 						</div>
@@ -42,7 +28,6 @@
 				<li typeof="sioc:Page" about="<%= document.url %>">
 					<a href="<%= document.url %>" property="dc:title">
 						<span class="animated" data-hover="<%= document.title %>">
-							<div class="bullet-box"> </div>
 							<div>
 								<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
 							</div>
