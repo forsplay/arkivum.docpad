@@ -2,13 +2,14 @@
 <div class="pure-g-r">
 	<div class="pure-u-1">
 		<span class="box animated"><span>
+		<!-- Logo Stamp -->
+		<span class="arkivum-logo-stamp">
+			<a href="/"><%- @partial('arkivum-A-stamp') %></a>
+		</span>
 		<nav>
 			<ul class="sidebar-menu animated">
 				<li class="pure-menu-selected"><a href="/">
 					<span class="animated" data-hover="Home">
-						<div>
-							<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
-						</div>
 						<bdi class="menu-text">
 							Home
 						</bdi>
@@ -16,9 +17,6 @@
 				</a></li>
 				<li><a href="#">
 					<span class="animated" data-hover="Tour">
-						<div>
-							<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
-						</div>
 						<bdi class="menu-text">
 							Tour
 						</bdi>
@@ -28,9 +26,6 @@
 				<li typeof="sioc:Page" about="<%= document.url %>">
 					<a href="<%= document.url %>" property="dc:title">
 						<span class="animated" data-hover="<%= document.title %>">
-							<div>
-								<%- @getIconmonstrBlock('badge3rounded','menuIcon','menu-icon') %>
-							</div>
 							<bdi class="menu-text">
 								<%= document.title %>
 							</bdi>

@@ -40,7 +40,7 @@
 <body>
 
 <!-- Markup -->
-<div class="content pure-g-r">
+<div class="content pure-g-r meta-content">
 	<div class="header pure-u-1">
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal animated">
 			<span class="logo-block">

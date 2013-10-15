@@ -5,18 +5,18 @@
 		<span>
 			<span class="share">
 				<div class="cl-effect-2-right">
-					<span class="share-icon-box icon-share-box">
+					<span class="share-icon-box icon-share-box animated">
 						<!-- <div class="bullet-box-share bullet-box-sh"> </div> -->
-						<%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
+						<%- @getIconmonstrBlock('facebook2','shareIcon','share-icon fb-icon') %>
 					</span>
-					<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
-						<%- @getIconmonstrBlock('youtube4','shareIcon','share-icon yt-icon') %>
+					<a href="https://twitter.com/Arkivum"><span class="share-icon-box animated">
+						<%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
 					</span></a>
-					<a href="https://twitter.com/Arkivum"><span class="share-icon-box">
-						<%- @getIconmonstrBlock('twitter4','shareIcon','share-icon') %>
+					<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box animated">
+						<%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
 					</span></a>
-					<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
-						<%- @getIconmonstrBlock('linkedin4','shareIcon','share-icon') %>
+					<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box animated">
+						<%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
 					</span></a>
 				</div>
 			</span>

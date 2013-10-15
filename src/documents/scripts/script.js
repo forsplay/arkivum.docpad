@@ -5,8 +5,8 @@ YUI().use('node', 'event', 'anim', /*'node-event-simulate',*/ 'button', function
 	  {
 	  	node: '#slash',
 	  	to: {
-	  		marginTop: '0%',
-	  		marginLeft: '-23px'
+	  		marginTop: '8px',
+	  		marginLeft: '-7px'
 	  	},
 	    duration: 0.777,
 	    easing: Y.Easing.bounceBoth

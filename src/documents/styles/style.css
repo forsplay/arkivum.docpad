@@ -6,6 +6,7 @@ body {
     /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     -webkit-backface-visibility: hidden; 
     background: #f9f9f9;
+    overflow-x:hidden;
 }
 
 ::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(222,222,222,1) url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/brushed_alu.png);}
@@ -77,8 +78,8 @@ body .primary-button {
 
 .splash {
     color: #464646;
-    margin: 2em auto 0;
-    padding: 3em 0.5em;
+    margin:0 auto;
+    padding: 0 0.5em;
     font-family: "DINlight";
 }
     .splash .splash-head {
@@ -92,9 +93,19 @@ body .primary-button {
         line-height: 1.4em;
         text-align: center;
     }
+    .splash-list li{
+        margin: 0;
+        padding-left: 7px;
+        font-size: 44px;
+        list-style: url(https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/check-6-blue-icon.svg);
+    }
+    .splash-list span{
+        vertical-align: middle;
+        font-size: 19px;
+    }
 
 .sidebar{
-    margin:40px 0 0 0;
+    margin:0;
 }
     .sidebar .pure-g-r{
         position: absolute;
@@ -103,32 +114,29 @@ body .primary-button {
         z-index: 1;
         margin:0;
         position: absolute;
-        list-style: none;
         padding: 0;
         width: 100%;
-        border-top: 1px solid rgb(225, 227, 230);
-        border-bottom: 1px solid rgb(225, 227, 230);
         padding: 11px 0;
     }
     .sidebar-menu span{
         width: 100%;
         margin: 7px 0;
-        border: 1px solid rgb(235, 235, 235);
-        border-left: none;
-        border-right: none;
-        padding: 7px 0 7px 64px !important;
     }
     .sidebar-menu a{
-        font-weight: bold;
         text-decoration: none;
-        color: rgba(55, 60, 63, 0.9);
+        color: #334;
         width: 100%;
-        margin:0;
-    }
-    .sidebar-menu bdi{
-        width: 100%;
+        margin: auto;
         display: block;
-        padding:  0 0 0 13px;
+    }
+        .sidebar-menu a:hover{
+            font-weight: bold;
+        }
+    .sidebar-menu bdi{
+        display: block;
+        text-align: left;
+        width: 147px;
+        margin: 3px auto 0 auto;
     }
     .sidebar-menu .menu-icon{
         position: absolute;
@@ -143,34 +151,52 @@ body .primary-button {
     }
         .share-icon{
             position: absolute;
-            width: 71px;
-            height: 5%;
-            fill: #A3A8AC;
-            margin: -14px 0 0 -30px;
+            fill: #334;
+            background: #fff;
+            width: 51px;
+            height: 50px;
+            margin: -40px 0 0 -25px /* -7px 0 0 -7px */ ;
             opacity: 0.777;
         }
-        .yt-icon{
-            opacity: 1;
-        }
-        .icon-share{
-            height: 39px;
-            width: 12%;
-            margin: -13px 0 0 -8px;
-            fill:#fff;
-        }
-            .icon-share-box{
-                background: #A3A8AC !important;
+            .share-icon:hover{
+                opacity: 1;
             }
+            .yt-icon:hover{
+                fill: red;
+            }
+            .fb-icon:hover{
+                fill: #3B589C;
+            }
+            .tw-icon:hover{
+                fill: #00ACEE;
+            }
+            .ln-icon:hover{
+                fill: #0274B3;
+            }
+        /*
+        .icon-share{
+            height: 37px;
+            width: 35px;
+            margin: 0px 0 0 -8px;
+            fill:#fff;
+            background: transparent;
+        }
+            .icon-share:hover{
+                margin: -40px 0 0 -25px !important;
+            }
+            .icon-share-box{
+                background: #334 !important;
+            }
+        */
         .share-icon-box{
-            background: #fafafa;
-            height: 36px;
-            width: 36px;
+            height: 26px;
+            width: 26px;
             display: block;
-            border-radius: 50%;
-            margin: 5px 0 0 19px;
+            margin: 0 13px 0 -3px;
             padding: 13px;
             opacity: 0.777;
             float: left;
+            text-align: center;
         }
 
         .share{
@@ -178,35 +204,32 @@ body .primary-button {
             width: 100%;
             display: block;
             list-style: none;
-            margin: 0;
+            margin: 70px 0 58px 0;
             padding: 4px 3px;
-            border-top: 1px solid rgb(225, 227, 230);
-            border-bottom: 1px solid rgb(225, 227, 230);
         }
 
     .sidebar .box {
         width: 249px;
         height: 777px;
         margin: 0 9px;
-        position: absolute;
+        position: relative;
         display: inline-block;
-        top: 0.4444444444444444em;
-        border-top: 3px solid #8BA1A3;
-        background: #e5e5e5;
+        background: #fafafa;
     }
-        .sidebar-left .box{
-            border-top: 3px solid #8BA1A3;
-            border-right: 3px solid #D4D7D8;
-            border-left: 3px solid #7F9294;
-        }
-        .sidebar-right .box{
-            border-top: 3px solid #8BA1A3;
-            border-right: 3px solid #7F9294;
-            border-left: 3px solid #D4D7D8;
-        }
+    .sidebar .arkivum-logo-stamp{
+        text-align: center;
+        width: 100%;
+        height: 164px;
+        display: block;
+    }
+    .sidebar #arkivumStamp{
+        width:85px;
+        margin: -68px 0 0 0;
+        fill: #334;
+    }
 .content{
     background: #fff;
-    margin:53px 0 0 0;
+    margin:0;
 }
     .content .content-subhead {
         color: #999;
@@ -218,8 +241,11 @@ body .primary-button {
     }
 
     .content .content-ribbon {
-        margin: 3em;
+        margin: 0 3em 3em 3em;
         border-bottom: 1px solid #eee;
+    }
+    .meta-content{
+        margin: 130px 0 0 0 !important;
     }
 
 .ribbon {
@@ -347,21 +373,11 @@ body .primary-button {
     transition: all 0.4s ease-in-out;
 }
 .youtube-embed{
-    opacity: 0.7;
+    opacity: 0.81;
 }
     .youtube-embed:hover{
         opacity: 1;
     }
 #youtubeEmbed{
     margin:0;
-    border-top: 3px solid rgb(184, 184, 184);
-    border-right: 3px solid rgb(111, 111, 111);
-    border-left: 3px solid rgb(199, 199, 199);
-    border-bottom: 3px solid rgb(155, 155, 155);
 }
-    #youtubeEmbed:hover{
-        border-top: 3px solid rgb(84, 84, 84);
-        border-right: 3px solid rgb(33, 33, 33);
-        border-left: 3px solid rgb(111, 111, 111);
-        border-bottom: 3px solid rgb(55, 55, 55);
-    }
