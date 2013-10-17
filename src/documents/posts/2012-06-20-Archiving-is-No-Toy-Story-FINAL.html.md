@@ -2,10 +2,9 @@
 layout: post
 title: Archiving Is No Toy Story
 tags: ['post',archiving','backup','pixar']
-date: '2012-06-20'
+postDate: '2012-06-20'
 ```
 
-# Archiving Is No Toy Story
 With data becoming increasingly more valuable and compliance driven regulations at every turn, a plan on how to preserve data that you don’t require regular access to is essential. And let’s be clear here we’re not talking about back-up but archiving. 
 
 Only 10% of the data on enterprise networks is accessed on a regular basis – have you ever wondered what might happen if this data was wiped out, deleted or simply lost? That’s exactly what happened to world renowned animated film-makers Pixar who nearly lost the original the entire animations of blockbuster movie Toy Story 2* after someone mistakenly ran a command that removes everything on the file system.  

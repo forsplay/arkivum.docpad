@@ -2,10 +2,8 @@
 layout: post
 title: Glacier causes global warming
 tags: ['post','archiving','google','glacier']
-date: '2012-09-18'
+postDate: '2012-09-18'
 ```
-
-# Glacier causes global warming
 
 Amazon's recent announcement of Glacier has certainly elevated the profile of the global archive storage market. Glacier provides low cost archive storage as a cloud service and is ideal for infrequently used data that needs to be kept for future use or for compliance reasons. Aggressive pricing and the Amazon name mean Glacier is getting a huge amount of press which is great news for the archive industry particularly for companies like Arkivum who specialise is providing data archiving services.  
 
