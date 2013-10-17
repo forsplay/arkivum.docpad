@@ -14,5 +14,10 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 			:   scrolledPast();
 		});
 	}
-	
+
+	/*
+	Y.one("select").on('valuechange', function() {
+	  window.location = this.all("option:selected").get('value');
+	});
+	http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html */
 }); // YUI closes

@@ -4,7 +4,7 @@ layout: whitepaper
 tags: ['whitepaper']
 desc: Provides background to Arkivum's 100% guarantee of data integrity.
 pdf: /posts/whitepapers/Arkivum100guarentee.pdf
-postDate: '2013-12-10'
+postDate:
 ```
 
 # Arkivum's 100% Guarantee
