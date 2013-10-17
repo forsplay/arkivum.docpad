@@ -1,4 +1,6 @@
-<span class="sidebar-right-bg"></span>
+<% if @document.url is '/': %>
+	<span class="sidebar-right-bg"></span>
+<% end %>
 <div class="pure-g-r height-100p">
 	<div class="pure-u-1 height-100p">
 		<span class="box animated"><span>

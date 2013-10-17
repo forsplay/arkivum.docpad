@@ -1,0 +1,10 @@
+---
+layout: page
+---
+
+<a class="pdf right" href="<%- @document.pdf %>">
+	PDF
+	 <%- @getIconmonstrBlock('file3','phoneIcon','phone-icon') %>
+</a> 
+<%- @content %>
+

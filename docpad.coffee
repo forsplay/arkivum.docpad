@@ -39,13 +39,13 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"http://yui.yahooapis.com/pure/0.2.0/pure-min.css"
-				"styles/style.css"
+				"/styles/style.css"
 			]
 
 			# Scripts
 			scripts: [
 				"http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"
-				"scripts/script.js"
+				"/scripts/script.js"
 			]
 
 
@@ -85,6 +85,18 @@ docpadConfig = {
 
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
+
+		case_studies: (database) ->
+			database.findAllLive({tags:$has:'case_studies'}, [date:-1])
+
+		brochures: (database) ->
+			database.findAllLive({tags:$has:'brochure'}, [date:-1])
+
+		whitepapers: (database) ->
+			database.findAllLive({tags:$has:'whitepaper'}, [date:-1])
+
+		videos: (database) ->
+			database.findAllLive({tags:$has:'video'}, [date:-1])
 
 	# =================================
 	# DocPad Events

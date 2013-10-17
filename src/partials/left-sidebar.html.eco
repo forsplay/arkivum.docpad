@@ -1,4 +1,3 @@
-
 <div class="pure-g-r height-100p">
 	<div class="pure-u-1 height-100p">
 		<span class="box animated">
@@ -9,20 +8,6 @@
 			</span>
 			<nav>
 				<ul class="sidebar-menu animated">
-					<li class="pure-menu-selected"><a href="/">
-						<span class="animated" data-hover="Home">
-							<bdi class="menu-text">
-								Home
-							</bdi>
-						</span>
-					</a></li>
-					<li><a href="#">
-						<span class="animated" data-hover="Tour">
-							<bdi class="menu-text">
-								Tour
-							</bdi>
-						</span>
-					</a></li>
 					<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>">
 						<a href="<%= document.url %>" property="dc:title">
@@ -52,11 +37,8 @@
 				<span class="number-line">
 					<%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %>
 					 <span class="number-copy">Find us</span>
-					 <span class="map-embed">
-					 	
-					 </span>
-				</span>
-			</span>
+				</span><!--number-line-->
+			</span><!--contact-us-->
 			</span><!--box-inner-->
 		</span><!--box--> 
 	</div>

@@ -1,0 +1,20 @@
+---
+title: Resources
+layout: page
+pageOrder: 4
+---
+
+<p>
+	All our resources are listed below etc etc etc
+</p>
+
+<h4>Whitepapers and Articles</h4>
+<nav class="linklist">
+	<% for document in @getCollection('whitepapers').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			&raquo;
+			<span><%= document.postDate %></span>
+		</li>
+	<% end %>
+</nav>

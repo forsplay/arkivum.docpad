@@ -88,43 +88,53 @@ title: 'Home'
         </div>
         
         <div class="pure-g-r content-ribbon">
-            <div class="pure-u-1-3">
+            <div class="pure-u-1-4">
                 <div class="l-box">
-                    <img src="http://placehold.it/400x250"
-                         alt="Placeholder image for example.">
+                    <img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/iso-cert-icon.jpg"
+                         alt="ISO Cert icon">
                 </div>
             </div>
 
-            <div class="pure-u-2-3">
-                <div class="l-box">
-                    <h4 class="content-subhead">Some more small text</h4>
-
-                    <h3>Etiam iaculis iaculis lobortis.</h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
-                    </p>
-                </div>
+            <div class="pure-u-3-4">
+                <p>
+                    Arkivum is certified to ISO27001 and is audited on a 6 monthly basis. Combined with the digital preservation best practices (for example ISO standards on Open Archive Information Systems and Trusted Digital Repositories) this means that Arkivum can guarantee the data held within its service – Arkivum’s SLA is backed by worldwide insurance. Arkivum’s certified and auditable approach means the service can enable customers to meet a range of regulatory compliance requirements for records and document retention, including 21CFRPart11, EduraLex Volume 4 Annex 11, and UK specific requirements.&copy;
+                </p>
             </div>
         </div>
 
-          <div class="pure-g-r content-ribbon">
-            <div class="pure-u-1-3">
-                <div class="l-box">
-                    <img src="http://placehold.it/400x250"
-                         alt="Placeholder image for example.">
-                </div>
-            </div>
-
-            <div class="pure-u-2-3">
-                <div class="l-box">
-                    <h4 class="content-subhead">Some more small text</h4>
-
-                    <h3>Etiam iaculis iaculis lobortis.</h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. Morbi fermentum dui sit amet libero tincidunt rutrum. Nam sodales consequat metus sed accumsan.
-                    </p>
-                </div>
+        <div class="pure-g-r content-ribbon partner">
+            <div class="pure-u-1">
+                <h3>About Us</h3>
+                <p>
+                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                </p>
             </div>
         </div>
-        
+
+        <div class="pure-g-r content-ribbon partner">
+            <div class="pure-u-1">
+                <h3>Contact Us</h3>
+                <span class="contact-us">
+                    <span class="number-line">
+                        <%- @getIconmonstrBlock('phone','phoneIcon','phone-icon') %>
+                         <span class="number-copy">+44 1249 405060</span>
+                    </span>
+                    <span class="number-line">
+                        <%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
+                         <span class="number-copy">info@arkivum.com</span>
+                    </span>
+                    <span class="number-line"> 
+                        <%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %> 
+                        <span class="number-copy">
+                        R21 Langley Park Way,<br/>
+                        Chippenham,<br/>
+                        Wiltshire,<br/>
+                        SN15 1GE
+                        </span>
+                    </span><!--number-line-->
+                </span><!--contact-us-->
+                <br/><br/>
+            </div>
+        </div>
+
     </div>

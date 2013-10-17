@@ -21,12 +21,8 @@
 	<!-- Output DocPad produced meta elements -->
 	<%- @getBlock('meta').toHTML() %>
 
-	<!-- Icons -->
-    <link rel="shortcut icon" href="icons/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57-precomposed.png">
+	<!-- Icon -->
+    <link rel="shortcut icon" href="https://googledrive.com/host/0B9LVk4xbDIJTWVRrdzFhWlFxNG8/arkivum-icon.png">
 
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -41,17 +37,19 @@
 
 <!-- Markup -->
 <div class="content pure-g-r meta-content">
-	<div class="header pure-u-1">
-		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal animated">
-			<span class="logo-block">
-			<a class="pure-menu-heading" href="/">
-			<span class="logo-class"><%- @partial('arkivum-logo') %></span>
-			<span class="slogan animated">Every bit archived</span>
-			<h1 class="opa-0">Arkivum</h1>
-			</a>
-			</span>
-		</div>
-	</div>
+	<% if @document.url is '/': %>
+		<style type="text/css">.meta-content{margin: 130px 0 0 0 !important;}</style>
+		<%- @partial('header-logo-stripe') %>
+	<% end %>
+
+	<!-- Mobile Menu -->
+    <select id="mobileNav"> 
+    <% for document in @getCollection('pages').toJSON(): %>
+                <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iNav','iconmonstr-head-nav') %> 
+                        <%= document.title %>
+                </option>
+        <% end %>
+	</select>
 
 	<div class="sidebar sidebar-left pure-u-1-4">
 		<%- @partial('left-sidebar') %>
@@ -66,7 +64,10 @@
 	</div>
 
 	<div class="footer pure-u-1">
-		&copy; Arkivum Ltd. <span class="muted">*</span>&nbsp; Company Reg No. 7530353 <span class="muted">*</span>&nbsp; Privacy Policy <span class="muted">*</span>&nbsp; Terms & Conditions
+		&copy; Arkivum Ltd. <span class="muted">*</span>&nbsp;
+		 Company Reg No. 7530353 <span class="muted">*</span>&nbsp;
+		  <a href="/pages/privacy">Privacy Policy</a> <span class="muted">*</span>&nbsp;
+		   <a href="/pages/terms">Terms & Conditions</a>
 	</div>
 </div>
 

@@ -1,0 +1,40 @@
+---
+title: Partners
+layout: page
+tags: ['partners','page']
+pageOrder: 3
+---
+
+<br/>
+
+<span class="center">
+	<h2><span>Powered by Arkivum</span> <%- @partial('icon') %></h2>
+</span>
+
+<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, </p>
+
+<br/>
+
+<h4 class="center">OEM Partners</h4>
+<div class="pure-g-r">
+	<div class="pure-u-1-2 center">
+		<div class="pure-u-1-3">
+			<img class="partner-logo" src="https://googledrive.com/host/0B9LVk4xbDIJTdGxoNk5MOGQ5X1E/Proceed_Logo-2013.jpg" alt="proceed logo">
+		</div>
+	</div>
+	<div class="pure-u-1-2">
+		About Partner blurb...
+	</div>
+</div>
+
+<h4 class="center">Go To Market Partners</h4>
+<div class="pure-g-r">
+	<div class="pure-u-1-2 center">
+		<div class="pure-u-2-3">
+			<img src="https://googledrive.com/host/0B9LVk4xbDIJTdGxoNk5MOGQ5X1E/solid-state-solutions_logo.png" alt="Solid State Solutions logo">
+		</div>
+	</div>
+	<div class="pure-u-1-2">
+		About Partner blurb...
+	</div>
+</div>
