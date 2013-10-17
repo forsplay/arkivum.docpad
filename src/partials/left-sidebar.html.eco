@@ -1,39 +1,63 @@
 
-<div class="pure-g-r">
-	<div class="pure-u-1">
-		<span class="box animated"><span>
-		<!-- Logo Stamp -->
-		<span class="arkivum-logo-stamp">
-			<a href="/"><%- @partial('arkivum-A-stamp') %></a>
-		</span>
-		<nav>
-			<ul class="sidebar-menu animated">
-				<li class="pure-menu-selected"><a href="/">
-					<span class="animated" data-hover="Home">
-						<bdi class="menu-text">
-							Home
-						</bdi>
-					</span>
-				</a></li>
-				<li><a href="#">
-					<span class="animated" data-hover="Tour">
-						<bdi class="menu-text">
-							Tour
-						</bdi>
-					</span>
-				</a></li>
-				<% for document in @getCollection('pages').toJSON(): %>
-				<li typeof="sioc:Page" about="<%= document.url %>">
-					<a href="<%= document.url %>" property="dc:title">
-						<span class="animated" data-hover="<%= document.title %>">
+<div class="pure-g-r height-100p">
+	<div class="pure-u-1 height-100p">
+		<span class="box animated">
+			<span class="box-inner">
+			<!-- Logo Stamp -->
+			<span class="arkivum-logo-stamp">
+				<a href="/"><%- @partial('arkivum-A-stamp') %></a>
+			</span>
+			<nav>
+				<ul class="sidebar-menu animated">
+					<li class="pure-menu-selected"><a href="/">
+						<span class="animated" data-hover="Home">
 							<bdi class="menu-text">
-								<%= document.title %>
+								Home
 							</bdi>
-					</span>
-					</a>
-				</li>
-				<% end %>
-			</ul>
-		</nav>
+						</span>
+					</a></li>
+					<li><a href="#">
+						<span class="animated" data-hover="Tour">
+							<bdi class="menu-text">
+								Tour
+							</bdi>
+						</span>
+					</a></li>
+					<% for document in @getCollection('pages').toJSON(): %>
+					<li typeof="sioc:Page" about="<%= document.url %>">
+						<a href="<%= document.url %>" property="dc:title">
+							<span class="animated" data-hover="<%= document.title %>">
+								<bdi class="menu-text">
+									<%= document.title %>
+								</bdi>
+						</span>
+						</a>
+					</li>
+					<% end %>
+				</ul>
+			</nav>
+			<span>
+				<%- @partial('guaranteed-stamp') %>
+			</span>
+			<span class="contact-us">
+				<span class="contact-us-copy">Contact Us</span>
+				<span class="number-line">
+					<%- @getIconmonstrBlock('phone','phoneIcon','phone-icon') %>
+					 <span class="number-copy">+44 1249 405060</span>
+				</span>
+				<span class="number-line">
+					<%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
+					 <span class="number-copy">info@arkivum.com</span>
+				</span>
+				<span class="number-line">
+					<%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %>
+					 <span class="number-copy">Find us</span>
+					 <span class="map-embed">
+					 	
+					 </span>
+				</span>
+			</span>
+			</span><!--box-inner-->
+		</span><!--box--> 
 	</div>
 </div>

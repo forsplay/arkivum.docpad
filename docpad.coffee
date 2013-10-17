@@ -45,8 +45,6 @@ docpadConfig = {
 			# Scripts
 			scripts: [
 				"http://yui.yahooapis.com/3.12.0/build/yui/yui-min.js"
-				"https://googledrive.com/host/0B9LVk4xbDIJTejY4MmNBMzFoSkE/jquery-2.0.3.min.js"
-				"https://googledrive.com/host/0B9LVk4xbDIJTNGlYY19oZWY3MGM/modernizr.custom.js"
 				"scripts/script.js"
 			]
 

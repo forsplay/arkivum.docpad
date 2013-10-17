@@ -45,7 +45,6 @@
 		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal animated">
 			<span class="logo-block">
 			<a class="pure-menu-heading" href="/">
-			<span class="slash"><%- @partial('arkivum-slash') %></span>
 			<span class="logo-class"><%- @partial('arkivum-logo') %></span>
 			<span class="slogan animated">Every bit archived</span>
 			<h1 class="opa-0">Arkivum</h1>
@@ -67,8 +66,7 @@
 	</div>
 
 	<div class="footer pure-u-1">
-		&copy; Company <%- (new Date()).getFullYear() %>.
-		Website was last updated at <%= @site.date.toISOString() %>
+		&copy; Arkivum Ltd. <span class="muted">*</span>&nbsp; Company Reg No. 7530353 <span class="muted">*</span>&nbsp; Privacy Policy <span class="muted">*</span>&nbsp; Terms & Conditions
 	</div>
 </div>
 

@@ -1,8 +1,7 @@
-
-<div class="pure-g-r">
-	<div class="pure-u-1">
+<span class="sidebar-right-bg"></span>
+<div class="pure-g-r height-100p">
+	<div class="pure-u-1 height-100p">
 		<span class="box animated"><span>
-		<span>
 			<span class="share">
 				<div class="cl-effect-2-right">
 					<span class="share-icon-box icon-share-box animated">
@@ -21,8 +20,15 @@
 				</div>
 			</span>
 		</span>
+		<span class="daily-message">
+			<span> Message of the Day </span>
+			<p>
+				<%- @partial('message-of-the-day') %>
+			</p>
+		</span>
 		<span class="youtube-embed">
-			<iframe class="animated"id="youtubeEmbed" width="244" height="170" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
+			<iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</span>
 		</span>
 	</div>
 </div>

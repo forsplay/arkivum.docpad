@@ -1,12 +1,12 @@
 body {
     margin: 0 auto;
-    max-width: 1100px;
+    /* max-width: 1100px; */    
+    background: #fafafa;
     line-height: 1.7em;
+    overflow-x: hidden;
     font-family: 'DINlight', arial;
     /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     -webkit-backface-visibility: hidden; 
-    background: #f9f9f9;
-    overflow-x:hidden;
 }
 
 ::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(222,222,222,1) url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/brushed_alu.png);}
@@ -14,6 +14,7 @@ body {
 ::-webkit-scrollbar-thumb{background:#fafafa url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-footer_bg.png);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
 
 a{
+    text-decoration: none;
     color:rgba(63, 128, 172, 0.9);
 }
 
@@ -32,21 +33,33 @@ a{
         padding: 0.5em;
         text-align: center;
         font-family: 'DINmedium', arial;
-        background: #00a9c9 url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-header_bg.png) repeat-x;
+        background: #0095ce url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/_Brand-Toolbox_blue-bg.png ) no-repeat; /* https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/arkivum-header_bg.png */ 
     }
     .header .logo-block{
         display: block;
         text-align: center;
-        margin: auto;
+        margin: -12px auto 0;
         width: 309px;
         height: 69px;
         padding: 0 0 0 53px;
     }
     .header .slogan{
         float: left;
-        margin: -5px 0 0 -106px;
+        margin: -15px 0 0 -106px;
         width: 177%;
         padding: 0 0 0 30%;
+        font-size: 183%;
+        opacity: 0;
+    }
+    .daily-message span{
+        padding: 7px;
+        border-bottom: 1px solid #999; 
+    }
+    .daily-message{
+        display: block;
+        padding: 3px 13px;
+        text-align: center;
+        margin-bottom: 33px;
     }
     .header .pure-menu-heading{
         padding: 0;
@@ -108,12 +121,12 @@ body .primary-button {
     margin:0;
 }
     .sidebar .pure-g-r{
-        position: absolute;
+        position: fixed;
+        width: 25%;
     }
     .sidebar-menu{
         z-index: 1;
         margin:0;
-        position: absolute;
         padding: 0;
         width: 100%;
         padding: 11px 0;
@@ -150,12 +163,11 @@ body .primary-button {
         opacity: 0.97;
     }
         .share-icon{
-            position: absolute;
             fill: #334;
             background: #fff;
-            width: 51px;
+            width: 50px;
             height: 50px;
-            margin: -40px 0 0 -25px /* -7px 0 0 -7px */ ;
+            margin: 45px auto 0 -12px /* -7px 0 0 -7px */ ;
             opacity: 0.777;
         }
             .share-icon:hover{
@@ -191,30 +203,63 @@ body .primary-button {
         .share-icon-box{
             height: 26px;
             width: 26px;
-            display: block;
-            margin: 0 13px 0 -3px;
-            padding: 13px;
+            margin: 0 0 0 1%;
+            padding: 5%;
             opacity: 0.777;
-            float: left;
-            text-align: center;
         }
 
         .share{
             height: 55px;
-            width: 100%;
+            width: inherit;
             display: block;
             list-style: none;
-            margin: 70px 0 58px 0;
+            margin: 3px auto 93px auto;
             padding: 4px 3px;
+            text-align: center;
         }
-
+        .phone-icon{
+            fill:#334;
+            opacity: 1;
+            clear: both;
+            width: 21px;
+            height: 21px;
+            padding: 4px;
+            display: block;
+            margin: 11px 0 0 7%;
+        }
+        .contact-us{
+            padding: 0 0 0 13px;
+            text-align: left;
+            display: block;
+        }
+            .contact-us-copy{
+                width: 77%;
+                margin: auto auto auto 18px;
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid #999; 
+            }
+            .number-copy{
+                margin: -27px 0 0 21%;
+                display: block;
+            }
+            .number-line{
+                display: block;
+                margin: auto;
+            }
     .sidebar .box {
-        width: 249px;
-        height: 777px;
-        margin: 0 9px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
         position: relative;
         display: inline-block;
         background: #fafafa;
+    }
+        .box-inner{
+            display: block;
+        }
+    .height-100p{
+        height: 100%;
     }
     .sidebar .arkivum-logo-stamp{
         text-align: center;
@@ -225,6 +270,13 @@ body .primary-button {
     .sidebar #arkivumStamp{
         width:85px;
         margin: -68px 0 0 0;
+        fill: #334;
+    }
+    #guaranteedStamp{
+        width: 99%;
+        height: 111px;
+        margin: 33px auto 19px auto;
+        text-align: center;
         fill: #334;
     }
 .content{
@@ -246,6 +298,8 @@ body .primary-button {
     }
     .meta-content{
         margin: 130px 0 0 0 !important;
+        /* large display css
+        margin: 130px -14% 0 2% !important; */
     }
 
 .ribbon {
@@ -302,21 +356,25 @@ body .primary-button {
     fill:#fff;
 }
     #logo_svg{
-        width: 93%;
-        height: 93%;
+        width: 86%;
+        height: 86%;
         float: left;
-        margin: 0 0 0 -9px;
+        margin: 0 0 0 -11px;
     }
+    #logo_svg path{
+        fill:#fff;
+    }
+    /* slash animation retired
     #slash{
         float: left;
-        width: 30px;
-        height: 93%;
-        margin: -82px 0 0 13px;
+        width: 33px;
+        height: 111px;
+        margin: -133px 0 0 13px;
     }
     #slash_path{
         fill:#fff;
     }
-
+    */
 #confStamp{
     height: 111px;
     width: 111px;
@@ -329,7 +387,6 @@ body .primary-button {
     margin: -11px 0 0 -13px;
     fill: #767C7C;
 }
-
  #ISOcertStamp{
     height: 139%;
     width: 139%;
@@ -357,6 +414,21 @@ body .primary-button {
     }
     .sidebar-right .fixed-circ{
     }
+    .sidebar-right-bg{
+        background: url(https://googledrive.com/host/0B9LVk4xbDIJTdkdTRXhFMjE5V2s/_Brand-Toolbox_blue-bg-right.png) -172px no-repeat;
+        height: 127px;
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 826px;
+        float: right;
+        right: -548px;
+    }
+    /* large display css
+    .sidebar-left{
+        margin: 0 0 0 1%;
+        width: 18%;
+    } */
 .flip-vertical {
     -moz-transform: scaleY(-1);
     -webkit-transform: scaleY(-1);
@@ -374,10 +446,39 @@ body .primary-button {
 }
 .youtube-embed{
     opacity: 0.81;
+    display: block;
+    text-align: center;
+    height: 23%;
 }
     .youtube-embed:hover{
         opacity: 1;
     }
 #youtubeEmbed{
     margin:0;
+}
+.muted{
+    opacity: 0.333;
+}
+blockquote{
+    font-style: italic;
+}
+    .quoted{
+        font-style: normal;
+        font-weight: bold;
+        float: right;
+    }
+.right{
+    float: right;
+}
+.our-customers{
+    margin: 0 13% 0;
+}
+.splash-link{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 960px){
+
 }
