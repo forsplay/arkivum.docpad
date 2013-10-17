@@ -509,7 +509,7 @@ blockquote{
     position: fixed;
     display: none;
     width: 100%;
-    margin: 3px 0;
+    margin: 1px 0;
     padding: 3px 0;
 }
 
@@ -521,5 +521,5 @@ blockquote{
     h1{font-size: 22px !important;}
     .splash-list li{font-size: 13px !important;}
     .mobile-break{clear: both !important;}
-    .header .logo-block{margin: -15px auto 0;}
+    .header .logo-block{margin: -16px auto 0 !important;}
 }
