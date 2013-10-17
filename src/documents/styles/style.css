@@ -500,7 +500,8 @@ blockquote{
     position: fixed;
     display: none;
     width: 100%;
-    padding:3px 0;
+    margin: 3px 0;
+    padding: 3px 0;
 }
 
 @media screen and (max-width: 960px){
@@ -508,7 +509,8 @@ blockquote{
     .sidebar{display: none;}
     .stage{width: 100% !important;}
     #logo_svg{height: 79%;width: 79%;margin: 0 0 0 -15px}
-    h1{font-size: 22px;}
-    .splash-list li{font-size: 13px;}
-    .mobile-break{clear: both}
+    h1{font-size: 22px !important;}
+    .splash-list li{font-size: 13px !important;}
+    .mobile-break{clear: both !important;}
+    .header .logo-block{margin: -15px auto 0;}
 }

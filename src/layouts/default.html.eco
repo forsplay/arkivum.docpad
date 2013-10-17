@@ -44,12 +44,12 @@
 
 	<!-- Mobile Menu -->
     <select id="mobileNav" class="center"> 
-    <option value="/">Home</option>
+    <option value="" selected="selected">Select</option>
     <% for document in @getCollection('pages').toJSON(): %>
-                <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title">
-                        <%= document.title %>
-                </option>
-        <% end %>
+        <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title">
+                <%= document.title %>
+        </option>
+    <% end %>
 	</select>
 
 	<div class="sidebar sidebar-left pure-u-1-4">

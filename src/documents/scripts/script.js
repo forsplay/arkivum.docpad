@@ -14,5 +14,9 @@ YUI().use('node', 'event', function(Y) {
 			:   scrolledPast();
 		});
 	}
+
+	Y.one("#mobileNav").change(function() {
+	  window.location = this.one("option:selected").val();
+	});
 	
 }); // YUI closes
