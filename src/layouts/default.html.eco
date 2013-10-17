@@ -46,7 +46,7 @@
     <select id="mobileNav" class="center"> 
     <option value="" selected="selected">Select</option>
     <% for document in @getCollection('pages').toJSON(): %>
-        <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title">
+        <option value="<%= document.url %>" property="dc:title">
                 <%= document.title %>
         </option>
     <% end %>

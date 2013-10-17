@@ -1,4 +1,4 @@
-YUI().use('node', 'event', function(Y) {
+YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	
 	function scrolledPast(){
 		Y.one('.arkivum-logo-stamp').hide();
@@ -15,8 +15,8 @@ YUI().use('node', 'event', function(Y) {
 		});
 	}
 
-	Y.one("select").on('valuechange', function() {
-	  window.location = this.all("option:selected").get('value');
+	Y.one("select").on('valuechange', function(e) {
+	  window.location = e.newVal;
 	});
 	
 }); // YUI closes
