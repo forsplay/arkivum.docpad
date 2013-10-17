@@ -74,5 +74,11 @@
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<script type="text/javascript">
+		$("select").change(function() {
+	  		window.location = $(this).find("option:selected").val();
+		});
+	</script>
+	
 </body>
 </html>

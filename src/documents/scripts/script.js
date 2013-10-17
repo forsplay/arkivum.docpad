@@ -14,9 +14,5 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 			:   scrolledPast();
 		});
 	}
-
-	Y.one("select").on('valuechange', function(e) {
-	  window.location = e.newVal;
-	});
 	
 }); // YUI closes
