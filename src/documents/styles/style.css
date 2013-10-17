@@ -272,6 +272,7 @@ body .primary-button {
         margin: -68px 0 0 0;
         fill: #334;
     }
+    /*
     #guaranteedStamp{
         width: 99%;
         height: 111px;
@@ -279,6 +280,14 @@ body .primary-button {
         text-align: center;
         fill: #334;
     }
+    */
+    .g-stamp{
+        display: block;
+        margin: 5% 0;
+    }
+        .g-stamp img{
+            width: 111px;
+        }
 .content{
     background: #fff;
     margin:0;

@@ -15,7 +15,7 @@ YUI().use('node', 'event', function(Y) {
 		});
 	}
 
-	Y.one("#mobileNav").change(function() {
+	Y.one("select").on('change', function() {
 	  window.location = this.one("option:selected").val();
 	});
 	
