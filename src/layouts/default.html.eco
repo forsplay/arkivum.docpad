@@ -43,9 +43,10 @@
 	<% end %>
 
 	<!-- Mobile Menu -->
-    <select id="mobileNav"> 
+    <select id="mobileNav" class="center"> 
+    <option value="/">Home</option>
     <% for document in @getCollection('pages').toJSON(): %>
-                <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iNav','iconmonstr-head-nav') %> 
+                <option id="iconmonstrNav" value="<%= document.url %>" property="dc:title">
                         <%= document.title %>
                 </option>
         <% end %>
@@ -65,7 +66,7 @@
 
 	<div class="footer pure-u-1">
 		&copy; Arkivum Ltd. <span class="muted">*</span>&nbsp;
-		 Company Reg No. 7530353 <span class="muted">*</span>&nbsp;
+		 Company Reg No. 7530353 <span class="mobile-break muted">*</span>&nbsp;
 		  <a href="/pages/privacy">Privacy Policy</a> <span class="muted">*</span>&nbsp;
 		   <a href="/pages/terms">Terms & Conditions</a>
 	</div>
