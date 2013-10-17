@@ -16,7 +16,7 @@ YUI().use('node', 'event', function(Y) {
 	}
 
 	Y.one("select").on('valuechange', function() {
-	  window.location = this.one("option:selected").get('value');
+	  window.location = this.all("option:selected").get('value');
 	});
 	
 }); // YUI closes
