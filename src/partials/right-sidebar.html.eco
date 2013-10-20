@@ -1,36 +1,37 @@
 <% if @document.url is '/': %>
+<!--If index, show blue fading slashes image atop right sidebar to match the header's left blue slashes -->
 	<span class="sidebar-right-bg"></span>
 <% end %>
-<div class="pure-g-r height-100p">
-	<div class="pure-u-1 height-100p">
-		<span class="box animated"><span>
-			<span class="share">
-				<div class="cl-effect-2-right">
-					<span class="share-icon-box icon-share-box animated">
-						<!-- <div class="bullet-box-share bullet-box-sh"> </div> -->
-						<%- @getIconmonstrBlock('facebook2','shareIcon','share-icon fb-icon') %>
-					</span>
-					<a href="https://twitter.com/Arkivum"><span class="share-icon-box animated">
-						<%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
-					</span></a>
-					<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box animated">
-						<%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
-					</span></a>
-					<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box animated">
-						<%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
-					</span></a>
-				</div>
+	<div class="pure-g-r height-100p">
+		<div class="pure-u-1 height-100p">
+			<span class="box animated"><span>
+				<span class="share"><!-- Share bar including, ShareThis, Twitter, LinkedIn and YouTube -->
+					<div class="cl-effect-2-right"><!--SVG icons using the iconmonstr DocPad plugin-->
+						<span class="share-icon-box">
+							<%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
+						</span>
+						<a href="https://twitter.com/Arkivum"><span class="share-icon-box">
+							<%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
+						</span></a>
+						<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
+							<%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
+						</span></a>
+						<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
+							<%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
+						</span></a>
+					</div>
+				</span><!-- share-->
+			</span><!--box span-->
+			<span class="daily-message">
+				<!--Message of the Day coming from "partials/message-of-the-day.html" -->
+				<span> Message of the Day </span>
+				<p>
+					<%- @partial('message-of-the-day') %>
+				</p>
 			</span>
-		</span>
-		<span class="daily-message">
-			<span> Message of the Day </span>
-			<p>
-				<%- @partial('message-of-the-day') %>
-			</p>
-		</span>
-		<span class="youtube-embed">
-			<iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
-		</span>
-		</span>
-	</div>
-</div>
+			<span class="youtube-embed">
+				<iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
+			</span><!--youtube-embed-->
+			</span><!--box-->
+		</div><!--pure-u-1-->
+	</div><!--pure-g-r-->

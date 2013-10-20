@@ -44,7 +44,8 @@
 
 	<!-- Mobile Menu -->
     <select id="mobileNav" class="center"> 
-    <option value="" selected="selected">Select</option>
+    <option value="" selected="selected">Menu</option>
+    <option value="/">Home</option>
     <% for document in @getCollection('pages').toJSON(): %>
         <option value="<%= document.url %>" property="dc:title">
                 <%= document.title %>

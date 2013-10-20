@@ -17,6 +17,12 @@ a{
     text-decoration: none;
     color:rgba(63, 128, 172, 0.9);
 }
+li{
+    margin: 0;
+    padding-left: 5px;
+    font-size: 19px;
+    list-style: url(https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/check-6-blue-icon.svg);
+}
 
 .l-box {
     padding: 1em;
@@ -150,6 +156,7 @@ body .primary-button {
         text-align: left;
         width: 147px;
         margin: 3px auto 0 auto;
+        font-size: 16px;
     }
     .sidebar-menu .menu-icon{
         position: absolute;
@@ -176,8 +183,14 @@ body .primary-button {
             .yt-icon:hover{
                 fill: red;
             }
-            .fb-icon:hover{
-                fill: #3B589C;
+            .icon-share{
+                height: 35px;
+                width: 35px;
+                opacity: 1;
+                fill:#fff;
+                padding: 3px;
+                margin:0 auto 4px auto;
+                background: rgba(51, 51, 68, 0.75);
             }
             .tw-icon:hover{
                 fill: #00ACEE;
@@ -185,21 +198,6 @@ body .primary-button {
             .ln-icon:hover{
                 fill: #0274B3;
             }
-        /*
-        .icon-share{
-            height: 37px;
-            width: 35px;
-            margin: 0px 0 0 -8px;
-            fill:#fff;
-            background: transparent;
-        }
-            .icon-share:hover{
-                margin: -40px 0 0 -25px !important;
-            }
-            .icon-share-box{
-                background: #334 !important;
-            }
-        */
         .share-icon-box{
             height: 26px;
             width: 26px;
@@ -253,7 +251,7 @@ body .primary-button {
         margin: auto;
         position: relative;
         display: inline-block;
-        background: #f7f7f7;
+        background: #fafafa;
     }
         .box-inner{
             display: block;

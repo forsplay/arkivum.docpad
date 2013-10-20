@@ -81,12 +81,14 @@ docpadConfig = {
 	# These are special collections that our website makes available to us
 
 	collections:
+		# Pages & Posts, default DocPad collections
 		pages: (database) ->
 			database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
 
 		posts: (database) ->
 			database.findAllLive({tags:$has:'post'}, [date:-1])
 
+		# Case Studies, Brochures, Whitepapers, Videos, Arkivum collections
 		case_studies: (database) ->
 			database.findAllLive({tags:$has:'case_studies'}, [date:-1])
 
@@ -98,6 +100,10 @@ docpadConfig = {
 
 		videos: (database) ->
 			database.findAllLive({tags:$has:'video'}, [date:-1])
+
+		# Menu drop down collections
+		services: (database) ->
+			database.findAllLive({tags:$has:'service'}, [date:-1])
 
 	# =================================
 	# DocPad Events

@@ -1,0 +1,22 @@
+---
+title: Archive-as-a-Service
+layout: page
+pageOrder: 2
+---
+
+<p>
+	blurb
+</p>
+
+<h4>Whitepapers and Articles</h4>
+<nav class="linklist">
+	<% for document in @getCollection('services').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+		</li>
+	<% end %>
+</nav>

@@ -108,8 +108,8 @@ title: 'Home'
                 <p>
                     Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                 </p>
-            </div>
-        </div>
+            </div><!--pure-u-1-->
+        </div><!--pure-g-r partner-->
 
         <div class="pure-g-r content-ribbon partner">
             <div class="pure-u-1">
@@ -121,7 +121,11 @@ title: 'Home'
                     </span>
                     <span class="number-line">
                         <%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
-                         <span class="number-copy">info@arkivum.com</span>
+                         <span class="number-copy">
+                            <a href="mailto:info@arkivum.com" title="mailto:info@arkivum.com">
+                                info@arkivum.com
+                            </a>
+                         </span>
                     </span>
                     <span class="number-line"> 
                         <%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %> 
@@ -134,7 +138,7 @@ title: 'Home'
                     </span><!--number-line-->
                 </span><!--contact-us-->
                 <br/><br/>
-            </div>
-        </div>
+            </div><!--pure-u-1-->
+        </div><!--pure-g-r partner-->
 
     </div>

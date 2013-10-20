@@ -9,16 +9,21 @@
 			<nav>
 				<ul class="sidebar-menu animated">
 					<% for document in @getCollection('pages').toJSON(): %>
-					<li typeof="sioc:Page" about="<%= document.url %>">
-						<a href="<%= document.url %>" property="dc:title">
-							<span class="animated" data-hover="<%= document.title %>">
+						<li typeof="sioc:Page" about="<%= document.url %>">
+							<a href="<%= document.url %>" property="dc:title">
 								<bdi class="menu-text">
 									<%= document.title %>
 								</bdi>
-						</span>
-						</a>
-					</li>
-					<% end %>
+							</a>
+						</li>
+						<% if document.tags.indexOf('service') > -1: %>
+							<% for document in @getCollection('services').toJSON(): %>
+								<li>
+									<a href="<%= document.url %>"><%= document.title %></a>
+								</li>
+							<% end %><!--service-->
+						<% end %><!--service tag check-->
+					<% end %><!--pages-->
 				</ul>
 			</nav>
 			<span class="g-stamp center">
@@ -32,11 +37,19 @@
 				</span>
 				<span class="number-line">
 					<%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
-					 <span class="number-copy">info@arkivum.com</span>
+					 <span class="number-copy">
+					 	<a href="mailto:info@arkivum.com" title="mailto:info@arkivum.com">
+					 		info@arkivum.com
+					 	</a>
+					 </span>
 				</span>
 				<span class="number-line">
 					<%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %>
-					 <span class="number-copy">Find us</span>
+					 <span class="number-copy">
+					 	<a href="http://g.co/maps/5rnzn" title="Google Map">
+					 		Find us
+					 	</a>
+					 </span>
 				</span><!--number-line-->
 			</span><!--contact-us-->
 			</span><!--box-inner-->
