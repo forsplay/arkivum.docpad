@@ -496,6 +496,9 @@ body .primary-button {
 #youtubeEmbed{
     margin:0;
 }
+.mobile-item{
+    display: none;
+}
 .muted{
     opacity: 0.333;
 }
@@ -543,4 +546,5 @@ blockquote{
     .li{list-style: square !important;}
     .mobile-break{clear: both !important;}
     .header .logo-block{margin: -44px auto 0 !important;}
+    .mobile-item{display: block;}
 }
