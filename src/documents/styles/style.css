@@ -521,7 +521,7 @@ blockquote{
     font-style: italic;
     text-decoration: underline;
 }
-#mobileNav{
+#attrSel{
     position: fixed;
     display: none;
     width: 100%;
@@ -530,7 +530,7 @@ blockquote{
 }
 
 @media screen and (max-width: 960px){
-    #mobileNav{
+    #attrSel{
         display: inline-block;
         margin: -16px 0 0 0;
         padding: 3px 0;

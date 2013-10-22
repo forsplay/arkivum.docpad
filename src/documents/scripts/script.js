@@ -27,10 +27,13 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	Y.one('.nav').delegate('mouseenter', navEnter, 'li' );
 	Y.one('.nav').delegate('mouseleave', navLeave, 'li' );
 
-	
-	Y.one("select").on('valuechange', function(e) {
-	  window.location = e.newVal; //.filter("option:selected").get('value');
-	});
+	// Mobile menu
+	var mobileSelect = function(){
+		var selIndex = this.get("selectedIndex");
+		var attrOpts = this.get("options");
+		window.location = attrOpts.item(selIndex).get('value'); //.filter("option:selected").get('value');
+	};
+	Y.one('select').delegate('change', mobileSelect, this);
 	//http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html
 
 }); // YUI closes
