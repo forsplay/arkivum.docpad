@@ -1,0 +1,32 @@
+<!-- Define `renderMenu` partial -->
+<% renderMenu = (items) => %>
+<ul class="nav animated">
+    <% for item in items: %>
+        <!-- Highlight menu item if its `item.state` is not false -->
+        <li<% if item.state: %> class="selected animated"<% end %> class="animated">
+            <!-- Remove link if we’re currently viewing this document -->
+            <% if item.state != 'current': %>
+                <a class="animated" href="<%= item.url %>">
+                    <%= item.title %>
+                    <% if item.children: %>
+                        &raquo;
+                    <% end %>
+                </a>
+            <% else: %>
+                <strong>
+                    <%= item.title %>
+                    <% if item.children: %>
+                        &raquo;
+                    <% end %>
+                </strong>
+            <% end %>
+            <!-- Render submenu if item has children -->
+            <% if item.children: %>
+                <%- renderMenu(item.children) %>
+            <% end %>
+        </li>
+    <% end %>
+</ul>   
+<% end %>
+<!-- Run `renderMenu` partial aginst passed `menuItems` meta-data  -->
+<%= renderMenu @menuItems %>

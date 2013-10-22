@@ -6,26 +6,9 @@
 			<span class="arkivum-logo-stamp">
 				<a href="/"><%- @partial('arkivum-A-stamp') %></a>
 			</span>
-			<nav>
-				<ul class="sidebar-menu animated">
-					<% for document in @getCollection('pages').toJSON(): %>
-						<li typeof="sioc:Page" about="<%= document.url %>">
-							<a href="<%= document.url %>" property="dc:title">
-								<bdi class="menu-text">
-									<%= document.title %>
-								</bdi>
-							</a>
-						</li>
-						<% if document.tags.indexOf('service') > -1: %>
-							<% for document in @getCollection('services').toJSON(): %>
-								<li>
-									<a href="<%= document.url %>"><%= document.title %></a>
-								</li>
-							<% end %><!--service-->
-						<% end %><!--service tag check-->
-					<% end %><!--pages-->
-				</ul>
-			</nav>
+			<nav class="sidebar-menu animated">
+        		<%- @partial('menu.html.eco', {menuItems: @generateMenu(@document.url, 'left_sidebar_menu')}) %>
+    		</nav>
 			<span class="g-stamp center">
 				<img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/guaranteed-stamp.png" alt="arkivum guarantee">
 			</span>

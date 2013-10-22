@@ -3,7 +3,7 @@ title: Example Whitepaper
 layout: whitepaper
 tags: ['whitepaper']
 desc: Provides background to Arkivum's 100% guarantee of data integrity.
-pdf: /posts/whitepapers/Arkivum100guarentee.pdf
+pdf: /pages/resources/whitepapers/Arkivum100guarentee.pdf
 postDate:
 ```
 

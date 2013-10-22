@@ -1,16 +1,17 @@
 ---
-title: Archive-as-a-Service
+title: Resources
 layout: page
-pageOrder: 2
+menuOrder: 3
+tags: ['page','left_sidebar_menu-item']
 ---
 
 <p>
-	blurb
+	All our resources are listed below etc etc etc
 </p>
 
 <h4>Whitepapers and Articles</h4>
 <nav class="linklist">
-	<% for document in @getCollection('services').toJSON(): %>
+	<% for document in @getCollection('whitepapers').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
 			<% if document.postDate: %>

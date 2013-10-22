@@ -1,7 +1,8 @@
 ---
 title: Blog
 layout: page
-pageOrder: 6
+menuOrder: 5
+tags: ['page','blog','left_sidebar_menu-item']
 ---
 
 <nav class="linklist">

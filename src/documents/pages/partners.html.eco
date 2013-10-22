@@ -1,8 +1,8 @@
 ---
 title: Partners
 layout: page
-tags: ['partners','page']
-pageOrder: 3
+tags: ['partners','page','left_sidebar_menu-item']
+menuOrder: 2
 ---
 
 <br/>

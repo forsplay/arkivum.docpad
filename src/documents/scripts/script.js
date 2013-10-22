@@ -1,5 +1,6 @@
 YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	
+	/*
 	function scrolledPast(){
 		Y.one('.arkivum-logo-stamp').hide();
 	}
@@ -14,10 +15,23 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 			:   scrolledPast();
 		});
 	}
+	*/
 
-	/*
-	Y.one("select").on('valuechange', function() {
-	  window.location = this.all("option:selected").get('value');
+	// Left sidebar dropdown menus
+	Y.all('.nav .nav').setStyle('display','none');
+	var navEnter = function(e){
+			e.currentTarget.one('.nav').setStyle('display','block');
+	};
+	var navLeave = function (e){
+			e.currentTarget.one('.nav').setStyle('display','none');
+	};
+	Y.one('.nav').delegate('mouseenter', navEnter, 'li' );
+	Y.one('.nav').delegate('mouseleave', navLeave, 'li' );
+
+	
+	Y.one("select").on('valuechange', function(e) {
+	  window.location = e.newVal; //.filter("option:selected").get('value');
 	});
-	http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html */
+	//http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html
+
 }); // YUI closes
