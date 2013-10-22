@@ -459,6 +459,7 @@ body .primary-button {
             margin: 0 0 0 23px;
             padding: 0;
             z-index: 0;
+            display: none;
         }
         .nav .nav li{
             list-style: square;
@@ -526,7 +527,10 @@ blockquote{
 }
 
 @media screen and (max-width: 960px){
-    #mobileNav{display: inline-block;}
+    #mobileNav{
+        display: inline-block;
+        margin: 0;
+    }
     .sidebar{display: none;}
     .stage{width: 100% !important;}
     #logo_svg{
@@ -536,7 +540,7 @@ blockquote{
     }
     .header .pure-menu{height:89px;}
     h1{font-size: 22px !important;}
-    .splash-list li{font-size: 13px !important;}
+    .li{list-style: square !important;}
     .mobile-break{clear: both !important;}
-    .header .logo-block{margin: -16px auto 0 !important;}
+    .header .logo-block{margin: -44px auto 0 !important;}
 }

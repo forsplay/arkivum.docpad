@@ -18,7 +18,6 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	*/
 
 	// Left sidebar dropdown menus
-	Y.all('.nav .nav').setStyle('display','none');
 	var navEnter = function(e){
 			e.currentTarget.one('.nav').setStyle('display','block');
 	};
