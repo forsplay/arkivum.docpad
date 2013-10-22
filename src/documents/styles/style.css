@@ -531,7 +531,8 @@ blockquote{
 
 @media screen and (max-width: 960px){
     #attrSel{
-        display: inline-block;
+        position: fixed;
+        display: block;
         margin: -16px 0 0 0;
         padding: 3px 0;
     }

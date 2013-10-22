@@ -43,15 +43,17 @@
 	<% end %>
 
 	<!-- Mobile Menu -->
-	<label for="attrSel" class="mobile-item">Menu</label>: 
-    <select id="attrSel" class="center mobile-item"> 
-    <option value="/">Home</option>
-    <% for document in @getCollection('left_sidebar_menu').toJSON(): %>
-        <option value="<%= document.url %>" property="dc:title">
-                <%= document.title %>
-        </option>
-    <% end %>
-	</select>
+	<div class="mobile-menu">
+		<label for="attrSel" class="mobile-item">.</label>: 
+	    <select id="attrSel" class="center mobile-item"> 
+	    <option value="/">Home</option>
+	    <% for document in @getCollection('left_sidebar_menu').toJSON(): %>
+	        <option value="<%= document.url %>" property="dc:title">
+	                <%= document.title %>
+	        </option>
+	    <% end %>
+		</select><!--arrtSel-->
+	</div><!--mobile-menu-->
 
 	<div class="sidebar sidebar-left pure-u-1-4">
 		<%- @partial('left-sidebar') %>
