@@ -28,12 +28,12 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	Y.one('.nav').delegate('mouseleave', navLeave, 'li' );
 
 	// Mobile menu
-	var mobileSelect = function(){
+	Y.one('select').on('change', function(){
 		var selIndex = this.get("selectedIndex");
 		var attrOpts = this.get("options");
 		window.location = attrOpts.item(selIndex).get('value'); //.filter("option:selected").get('value');
-	};
-	Y.one('.mobile-menu').delegate('change', mobileSelect, 'select');
+	});
+	//Y.one('.mobile-menu').delegate('change', mobileSelect, 'select');
 	//http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html
 
 }); // YUI closes
