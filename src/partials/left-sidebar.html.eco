@@ -29,7 +29,7 @@
 				<span class="number-line">
 					<%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %>
 					 <span class="number-copy">
-					 	<a href="http://g.co/maps/5rnzn" title="Google Map">
+					 	<a href="http://g.co/maps/5rnzn" target ="_blank" title="Google Map">
 					 		Find us
 					 	</a>
 					 </span>
