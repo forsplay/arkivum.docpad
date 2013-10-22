@@ -33,7 +33,6 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 		var attrOpts = this.get("options");
 		window.location = attrOpts.item(selIndex).get('value'); //.filter("option:selected").get('value');
 	});
-	//Y.one('.mobile-menu').delegate('change', mobileSelect, 'select');
-	//http://yuilibrary.com/yui/docs/api/modules/event-valuechange.html
+	// http://yuilibrary.com/yui/docs/attribute/attribute-event.html
 
 }); // YUI closes
