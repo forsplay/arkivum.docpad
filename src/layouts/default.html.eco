@@ -37,14 +37,11 @@
 
 <!-- Markup -->
 <div class="content pure-g-r meta-content">
-	<% if @document.url is '/': %>
-		<style type="text/css">.meta-content{margin: 130px 0 0 0 !important;}</style>
-		<%- @partial('header-logo-stripe') %>
-	<% end %>
+	<style type="text/css">.meta-content{margin: 130px 0 0 0 !important;}</style>
+	<%- @partial('header-logo-stripe') %>
 
 	<!-- Mobile Menu -->
 	<div class="mobile-menu">
-		<label for="attrSel" class="mobile-item">.</label>: 
 	    <select id="attrSel" class="center mobile-item"> 
 	    <option value="/">Menu</option>
 	    <option value="/">Home</option>
@@ -67,6 +64,36 @@
 	<div class="sidebar sidebar-right pure-u-1-4">
 		<%- @partial('right-sidebar') %>
 	</div>
+
+    <div class="pure-g-r content-ribbon partner center">
+        <div class="pure-u-1-2">
+            <h3 class="contact-header">Contact Us</h3>
+            <span class="contact-us">
+                <span class="number-line">
+                    <%- @getIconmonstrBlock('phone','phoneIcon','phone-icon') %>
+                     <span class="number-copy">+44 1249 405060</span>
+                </span>
+                <span class="number-line">
+                    <%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
+                     <span class="number-copy">
+                        <a href="mailto:info@arkivum.com" title="mailto:info@arkivum.com">
+                            info<span class="arial">@</span>arkivum.com
+                        </a>
+                     </span>
+                </span>
+                <span class="number-line"> 
+                    <%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %> 
+                    <span class="number-copy">
+                    R21 Langley Park Way,<br/>
+                    Chippenham,<br/>
+                    Wiltshire,<br/>
+                    SN15 1GE
+                    </span>
+                </span><!--number-line-->
+            </span><!--contact-us-->
+            <br/><br/>
+        </div><!--pure-u-1-->
+    </div><!--pure-g-r partner-->
 
 	<div class="footer pure-u-1">
 		&copy; Arkivum Ltd. <span class="muted">*</span>&nbsp;

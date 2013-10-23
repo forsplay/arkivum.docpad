@@ -12,29 +12,6 @@
 			<span class="g-stamp center">
 				<img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/guaranteed-stamp.png" alt="arkivum guarantee">
 			</span>
-			<span class="contact-us">
-				<span class="contact-us-copy">Contact Us</span>
-				<span class="number-line">
-					<%- @getIconmonstrBlock('phone','phoneIcon','phone-icon') %>
-					 <span class="number-copy">+44 1249 405060</span>
-				</span>
-				<span class="number-line">
-					<%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
-					 <span class="number-copy">
-					 	<a href="mailto:info@arkivum.com" title="mailto:info@arkivum.com">
-					 		info@arkivum.com
-					 	</a>
-					 </span>
-				</span>
-				<span class="number-line">
-					<%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %>
-					 <span class="number-copy">
-					 	<a href="http://g.co/maps/5rnzn" target ="_blank" title="Google Map">
-					 		Find us
-					 	</a>
-					 </span>
-				</span><!--number-line-->
-			</span><!--contact-us-->
 			</span><!--box-inner-->
 		</span><!--box--> 
 	</div>

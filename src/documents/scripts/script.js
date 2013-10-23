@@ -31,7 +31,7 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	Y.one('select').on('change', function(){
 		var selIndex = this.get("selectedIndex");
 		var attrOpts = this.get("options");
-		window.location = attrOpts.item(selIndex).get('value'); //.filter("option:selected").get('value');
+		window.location = attrOpts.item(selIndex).get('value');
 	});
 	// http://yuilibrary.com/yui/docs/attribute/attribute-event.html
 

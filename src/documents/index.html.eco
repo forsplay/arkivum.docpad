@@ -42,7 +42,7 @@ title: 'Home'
         </div>
 
         <div class="pure-g-r content-ribbon mobile-item">
-            <div class="pure-u-1">
+            <div class="pure-u-1 center">
                 <span class="youtube-embed">
                         <iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
                 </span><!--youtube-embed-->
@@ -140,34 +140,5 @@ title: 'Home'
             </div><!--pure-u-1-->
         </div><!--pure-g-r partner-->
 
-        <div class="pure-g-r content-ribbon partner">
-            <div class="pure-u-1">
-                <h3>Contact Us</h3>
-                <span class="contact-us">
-                    <span class="number-line">
-                        <%- @getIconmonstrBlock('phone','phoneIcon','phone-icon') %>
-                         <span class="number-copy">+44 1249 405060</span>
-                    </span>
-                    <span class="number-line">
-                        <%- @getIconmonstrBlock('email','phoneIcon','phone-icon') %>
-                         <span class="number-copy">
-                            <a href="mailto:info@arkivum.com" title="mailto:info@arkivum.com">
-                                info@arkivum.com
-                            </a>
-                         </span>
-                    </span>
-                    <span class="number-line"> 
-                        <%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %> 
-                        <span class="number-copy">
-                        R21 Langley Park Way,<br/>
-                        Chippenham,<br/>
-                        Wiltshire,<br/>
-                        SN15 1GE
-                        </span>
-                    </span><!--number-line-->
-                </span><!--contact-us-->
-                <br/><br/>
-            </div><!--pure-u-1-->
-        </div><!--pure-g-r partner-->
-
     </div>
+    
