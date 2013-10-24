@@ -27,6 +27,8 @@ li{
 .l-box {
     padding: 1em;
 }
+.clear{clear: both;}
+.sharethis{display: none;}
 
 .header {
     margin: 0 0;
@@ -538,6 +540,7 @@ blockquote{
     margin: 0;
     padding: 3px 0;
 }
+.block{display: block;}
 
 @media screen and (max-width: 960px){
     #attrSel{

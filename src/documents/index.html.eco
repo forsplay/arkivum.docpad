@@ -35,7 +35,7 @@ title: 'Home'
                 </blockquote>
                 <br/>
                 <span class="right our-customers splash-link">
-                    <a href="#">Our Customers</a>
+                    <a href="/pages/resources/">Our Customers</a>
                 </span>
                 <br/><br/>
             </div>
@@ -73,16 +73,17 @@ title: 'Home'
                 <p>
                     We sell our archiving service through a network of reseller and OEM partners.
                 </p>
-                <span class="splash-link">
-                    <a href="#">Find a Partner</a>
-                </span>
+                <span class="splash-link right">
+                    <a href="/pages/partners">Find a Partner</a>
+                </span><br/><br/>
 
                 <p>
                     Partner with Arkivum and OEM our digital archiving service with your own application or service and give your customers the best of both worlds: our digital preservation expertise and service, backed by your own expertise and industry knowledge.
                 </p>
-                <span class="splash-link">
-                    <a href="#">Become a Partner</a>
-                </span>
+                <br/>
+                <span class="splash-link right">
+                    <a href="/pages/partners/#become">Become a Partner</a>
+                </span><br/><br/>
                 <ul>
                     <li>Safe and Secure</li>
                     <li>Easy to Access</li>
@@ -135,8 +136,10 @@ title: 'Home'
             <div class="pure-u-1">
                 <h3>About Us</h3>
                 <p>
-                    Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                </p>
+                    Arkivum is an established provider of data archiving solutions, including the industry leading A-Stor data archiving service, which provides a fully-managed and secure service for long-term data retention with online access and a guarantee of data integrity that’s part of our Service Level Agreement and backed by worldwide insurance. 
+                    <br><br>
+                    Our links with University of Southampton IT Innovation Centre means that we have direct access to state-of-the-art research in digital preservation that helps us meet our commitments to our customers. This is complemented by a team at Arkivum that brings strong software skills together with in-depth experience in data centre operations and robust and reliable storage system implementation. 
+                </p><br>
             </div><!--pure-u-1-->
         </div><!--pure-g-r partner-->
 

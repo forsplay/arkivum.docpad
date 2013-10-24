@@ -1,24 +1,31 @@
-<% if @document.url is '/': %>
-<!--If index, show blue fading slashes image atop right sidebar to match the header's left blue slashes -->
 	<span class="sidebar-right-bg"></span>
-<% end %>
+
 	<div class="pure-g-r height-100p">
 		<div class="pure-u-1 height-100p">
 			<span class="box animated"><span>
 				<span class="share"><!-- Share bar including, ShareThis, Twitter, LinkedIn and YouTube -->
 					<div class="cl-effect-2-right"><!--SVG icons using the iconmonstr DocPad plugin-->
 						<span class="share-icon-box">
+							<a href="#" title="ShareThis">
 							<%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
+							</a>
 						</span>
-						<a href="https://twitter.com/Arkivum"><span class="share-icon-box">
+						<a href="https://twitter.com/Arkivum" title="Arkivum's Twitter"><span class="share-icon-box">
 							<%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
 						</span></a>
-						<a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
+						<a href="http://www.linkedin.com/company/Arkivum" title="Arkivum's LinkedIn"><span class="share-icon-box">
 							<%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
 						</span></a>
-						<a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
+						<a href="http://www.youtube.com/user/ArkivumUK" title="Arkivum's YouTube"><span class="share-icon-box">
 							<%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
 						</span></a>
+					<span class="sharethis">
+						<span class='st_twitter_large' displayText='Tweet'></span>
+						<span class='st_linkedin_large' displayText='LinkedIn'></span>
+						<span class='st_googleplus_large' displayText='Google +'></span>
+						<span class='st_facebook_large' displayText='Facebook'></span>
+						<span class='st_email_large' displayText='Email'></span>
+					</span>
 					</div>
 				</span><!-- share-->
 			</span><!--box span-->

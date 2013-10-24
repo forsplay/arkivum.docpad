@@ -17,6 +17,11 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	}
 	*/
 
+	// ShareThie
+	Y.one('#shareIcon').on('click', function(){
+		Y.one('.sharethis').toggleClass('block');
+	});
+
 	// Left sidebar dropdown menus
 	var navEnter = function(e){
 			e.currentTarget.one('.nav').setStyle('display','block');

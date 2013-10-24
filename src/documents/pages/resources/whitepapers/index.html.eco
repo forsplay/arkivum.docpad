@@ -4,19 +4,6 @@ layout: page
 tags: ['whitepapers','page','resources','left_sidebar_menu-item']
 ---
 
-<p>
-	All our resources are listed below etc etc etc
-</p>
-
-<h4>Whitepapers and Articles</h4>
-<nav class="linklist">
-	<% for document in @getCollection('whitepapers').toJSON(): %>
-		<li>
-			<a href="<%= document.url %>"><%= document.title %></a>
-			<% if document.postDate: %>
-				&raquo;
-				<span><%= document.postDate %></span>
-			<% end %>
-		</li>
-	<% end %>
-</nav>
+<script type="text/javascript">
+	window.location = "/pages/resources/#whitepapers";
+</script>

@@ -105,6 +105,7 @@ docpadConfig = {
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])
 
+
 	# =================================
 	# DocPad Events
 

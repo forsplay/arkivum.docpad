@@ -32,6 +32,10 @@
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "183d6ec4-2e61-4fcb-a656-3f323bf24ada", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body>
 
@@ -65,6 +69,7 @@
 		<%- @partial('right-sidebar') %>
 	</div>
 
+	<br>
     <div class="pure-g-r content-ribbon partner center">
         <div class="pure-u-1-2">
             <h3 class="contact-header">Contact Us</h3>
@@ -84,6 +89,9 @@
                 <span class="number-line"> 
                     <%- @getIconmonstrBlock('location15','phoneIcon','phone-icon') %> 
                     <span class="number-copy">
+		            <a href="http://g.co/maps/5rnzn" target ="_blank" title="Google Map">
+						Find us
+		            </a><br/>
                     R21 Langley Park Way,<br/>
                     Chippenham,<br/>
                     Wiltshire,<br/>
