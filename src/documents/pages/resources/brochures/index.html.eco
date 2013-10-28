@@ -1,0 +1,9 @@
+---
+title: Brochures
+layout: page
+tags: ['brochures','page','resources','left_sidebar_menu-item']
+---
+
+<script type="text/javascript">
+	window.location = "/pages/resources/#brochures";
+</script>

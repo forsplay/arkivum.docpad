@@ -21,11 +21,54 @@ tags: ['page','left_sidebar_menu-item']
 				&raquo;
 				<span><%= document.postDate %></span>
 			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
 		</li>
+		<br>
 	<% end %>
 </nav>
 
 <br>
 
-<h4 id="case_studies">Case Studies</h4>
-Coming Soon.
+<h4 id="casestudies">Case Studies</h4>
+<nav class="linklist">
+	<% for document in @getCollection('casestudies').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
+
+<br>
+
+
+<h4 id="brochures">Brochures</h4>
+<nav class="linklist">
+	<% for document in @getCollection('brochures').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
+
+<br>

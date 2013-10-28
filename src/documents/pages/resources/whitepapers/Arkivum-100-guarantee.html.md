@@ -1,17 +1,15 @@
 ```
-title: Example Whitepaper
+title: Arkivum's 100% Guarantee
 layout: whitepaper
 tags: ['whitepaper']
 desc: Provides background to Arkivum's 100% guarantee of data integrity.
 pdf: /pages/resources/whitepapers/Arkivum100guarentee.pdf
-postDate:
 ```
 
-# Arkivum's 100% Guarantee
 ## BACKGROUND
 There are many threats to long-term data integrity when using IT systems, in particular mass storage technology, but also from the people and processes that surround the use of this technology.  
 Risk assessment methodologies from both the digital preservation and information security communities provide a rigorous and structured approach to identifying, assessing and managing these risks.
-Arkivum has used this risk assessment approach to identify the measures needed to ensure 100% data integrity for our customers. 
+Arkivum has used this risk assessment approach to identify the measures needed to ensure 100% data integrity for our customers.  
 
 The risks that need to be considered include:
 + Risks of loss of data authenticity and integrity.   

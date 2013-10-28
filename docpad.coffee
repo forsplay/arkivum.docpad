@@ -89,8 +89,8 @@ docpadConfig = {
 			database.findAllLive({tags:$has:'post'}, [date:-1])
 
 		# Case Studies, Brochures, Whitepapers, Videos, Arkivum collections
-		case_studies: (database) ->
-			database.findAllLive({tags:$has:'case_studies'}, [date:-1])
+		casestudies: (database) ->
+			database.findAllLive({tags:$has:'casestudy'}, [date:-1])
 
 		brochures: (database) ->
 			database.findAllLive({tags:$has:'brochure'}, [date:-1])
@@ -104,6 +104,7 @@ docpadConfig = {
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])
+
 
 
 	# =================================
