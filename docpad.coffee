@@ -90,20 +90,23 @@ docpadConfig = {
 
 		# Case Studies, Brochures, Whitepapers, Videos, Arkivum collections
 		casestudies: (database) ->
-			database.findAllLive({tags:$has:'casestudy'}, [date:-1])
+			database.findAllLive({casestudy: $exists: true}, [casestudy:1,title:1])
 
 		brochures: (database) ->
-			database.findAllLive({tags:$has:'brochure'}, [date:-1])
+			database.findAllLive({brochure: $exists: true}, [brochure:1,title:1])
 
 		whitepapers: (database) ->
-			database.findAllLive({tags:$has:'whitepaper'}, [date:-1])
+			database.findAllLive({whitepaper: $exists: true}, [whitepaper:1,title:1])
 
 		videos: (database) ->
-			database.findAllLive({tags:$has:'video'}, [date:-1])
+			database.findAllLive({video: $exists: true}, [video:1,title:1])
 
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])
+
+		mobilemenu: (database) ->
+			database.findAllLive({mobileMenu: $exists: true}, [mobileMenu:1,title:1])
 
 
 

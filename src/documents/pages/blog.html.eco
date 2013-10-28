@@ -2,6 +2,7 @@
 title: Blog
 layout: page
 menuOrder: 5
+mobileMenu: 1
 tags: ['page','blog','left_sidebar_menu-item']
 ---
 

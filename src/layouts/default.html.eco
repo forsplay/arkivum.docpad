@@ -49,7 +49,7 @@
 	    <select id="attrSel" class="center mobile-item"> 
 	    <option value="/">Menu</option>
 	    <option value="/">Home</option>
-	    <% for document in @getCollection('left_sidebar_menu').toJSON(): %>
+	    <% for document in @getCollection('mobilemenu').toJSON(): %>
 	        <option value="<%= document.url %>" property="dc:title">
 	                <%= document.title %>
 	        </option>

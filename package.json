@@ -24,7 +24,7 @@
     "url": "https://github.com/MassDistributionMedia/arkivum.docpad.git"
   },
   "engines": {
-    "node": "0.10",
+    "node": "0.10.x",
     "npm": "1.2"
   },
   "dependencies": {
@@ -38,7 +38,7 @@
     "docpad-plugin-text": "~2.3.1",
     "docpad-plugin-ghpages": "~2.4.0",
     "docpad-plugin-menu": "~2.1.0",
-    "docpad-plugin-iconmonstr": "2.x"
+    "docpad-plugin-iconmonstr": "~2.0.15"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.3"

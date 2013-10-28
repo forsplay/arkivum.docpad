@@ -2,6 +2,7 @@
 title: Archive-as-a-Service
 layout: page
 menuOrder: 1
+mobileMenu: 1
 tags: ['left_sidebar_menu-item']
 ```
  
