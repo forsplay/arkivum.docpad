@@ -6,7 +6,7 @@ tags: ['privacy']
 
 This Privacy Policy covers Arkivum's treatment of personal information that Arkivum gathers when you are on the Arkivum website ("the site") and when you use Arkivum services.
 
-What information do we collect?
+What information do we collect? 
 
 We collect information from you when you register on our site or fill out a form. When ordering or registering on our site, as appropriate, you may be asked to enter your name and e-mail address. You may, however, visit our site anonymously.
 

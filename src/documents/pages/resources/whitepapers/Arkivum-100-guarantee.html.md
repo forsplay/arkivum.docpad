@@ -8,7 +8,7 @@ pdf: /pages/resources/whitepapers/Arkivum100guarentee.pdf
 ```
 
 ## BACKGROUND
-There are many threats to long-term data integrity when using IT systems, in particular mass storage technology, but also from the people and processes that surround the use of this technology.  
+There are many threats to long-term data integrity when using IT systems, in particular mass storage technology, but also from the people and processes that surround the use of this technology. 
 Risk assessment methodologies from both the digital preservation and information security communities provide a rigorous and structured approach to identifying, assessing and managing these risks.
 Arkivum has used this risk assessment approach to identify the measures needed to ensure 100% data integrity for our customers.  
 

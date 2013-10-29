@@ -14,4 +14,4 @@ tags: ['page','blog','left_sidebar_menu-item']
 			<span><%= document.postDate %></span>
 		</li>
 	<% end %>
-</nav>
+</nav> 
