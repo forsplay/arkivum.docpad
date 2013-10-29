@@ -1,6 +1,6 @@
 ```
-layout: post
 title: Archiving Is No Toy Story
+layout: post
 tags: ['post',archiving','backup','pixar']
 postDate: '2012-06-20'
 ```
