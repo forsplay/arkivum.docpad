@@ -6,7 +6,7 @@ mobileMenu: 1
 tags: ['page','blog','left_sidebar_menu-item']
 ---
 
-<nav class="linklist">
+<nav class="linklist"> 
 	<% for document in @getCollection('posts').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>

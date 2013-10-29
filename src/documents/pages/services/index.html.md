@@ -6,7 +6,7 @@ mobileMenu: 1
 tags: ['left_sidebar_menu-item']
 ```
  
-<br>
+<br> 
 
 ### How It Works
 Arkivum’s storage is based on the principle that 3 copies are needed for absolute certainty that data is safe.  So using active integrity checking at all times, every one of your files is copied three times, with 2 copies held online in geographically separated data centres and the third held offline locked away in an escrow service.
