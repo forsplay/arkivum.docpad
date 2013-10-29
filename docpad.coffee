@@ -109,7 +109,6 @@ docpadConfig = {
 			database.findAllLive({mobileMenu: $exists: true}, [mobileMenu:1,title:1])
 
 
-
 	# =================================
 	# DocPad Events
 
