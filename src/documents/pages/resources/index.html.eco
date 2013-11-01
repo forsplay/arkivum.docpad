@@ -6,27 +6,7 @@ mobileMenu: 1
 tags: ['page','left_sidebar_menu-item']
 ---
 
-<span id="whitepapers" class="muted">.</span>
-
-<br> 
-
-<h4>Whitepapers and Articles</h4>
-<nav class="linklist">
-	<% for document in @getCollection('whitepapers').toJSON(): %>
-		<li>
-			<a href="<%= document.url %>"><%= document.title %></a>
-			<% if document.postDate: %>
-				&raquo;
-				<span><%= document.postDate %></span>
-			<% end %>
-			<% if document.desc: %>
-				<br>
-				<sub><%= document.desc %></sub>
-			<% end %>
-		</li>
-		<br>
-	<% end %>
-</nav>
+<span id="brochures" class="muted">.</span>
 
 <br>
 
@@ -50,6 +30,7 @@ tags: ['page','left_sidebar_menu-item']
 
 <br>
 
+<span id="whitepapers" class="muted">.</span>
 
 <h4 id="brochures">Brochures</h4>
 <nav class="linklist">
@@ -69,4 +50,44 @@ tags: ['page','left_sidebar_menu-item']
 	<% end %>
 </nav>
 
-<br>
+<br> 
+
+<span id="videos" class="muted">.</span>
+
+<h4>Whitepapers & Articles</h4>
+<nav class="linklist">
+	<% for document in @getCollection('whitepapers').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
+
+<br> 
+
+<h4>Webinars & Videos</h4>
+<nav class="linklist">
+	<% for document in @getCollection('videos').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>

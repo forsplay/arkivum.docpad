@@ -101,6 +101,12 @@ docpadConfig = {
 		videos: (database) ->
 			database.findAllLive({video: $exists: true}, [video:1,title:1])
 
+		events: (database) ->
+			database.findAllLive({event: $exists: true}, [event:1,title:1])
+
+		news: (database) ->
+			database.findAllLive({tags:$has:'news'}, [date:-1])
+
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])

@@ -1,0 +1,52 @@
+---
+title: News & Events
+layout: page
+menuOrder: 4
+mobileMenu: 1
+tags: ['page','left_sidebar_menu-item']
+---
+
+<p>
+	All our News & Events are listed below etc etc etc
+</p>
+
+<h4>News</h4>
+<nav class="linklist">
+	<% for document in @getCollection('news').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
+
+<br>
+
+<h4 id="casestudies">Events</h4>
+<nav class="linklist">
+	<% for document in @getCollection('events').toJSON(): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
+
+<br>
+
