@@ -104,6 +104,13 @@ docpadConfig = {
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])
+            .on('add', (model) ->
+                #require('fs').appendFileSync 'left-sidebar.log', JSON.stringify(model) + "\n"
+                urlDupe = @any (_model) ->
+                    return _model.get('url') is model.get('url')
+                
+                if urlDupe then return false
+            )
 
 		mobilemenu: (database) ->
 			database.findAllLive({mobileMenu: $exists: true}, [mobileMenu:1,title:1])
