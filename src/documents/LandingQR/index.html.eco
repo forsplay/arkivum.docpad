@@ -1,0 +1,147 @@
+---
+layout: 'default'
+title: 'Home'
+---
+    <div class="splash pure-u-1">
+        <div class="pure-g-r">
+            <div class="pure-u-1">
+                <div class="l-box splash-text">
+
+                    <h1 class="splash-subhead">
+                        <span class="font-DINmedium">Arkivum</span> provides a large scale, long term, and cost effective digital archiving service with a unique 100% data integrity guarantee.
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content pure-u-1">
+        <div class="pure-g-r content-ribbon">
+            <div class="pure-u-1">
+                    <ul class="splash-list">
+                        <li> <span>Reduce Capital Expenditure.</span> </li>
+                        <li> <span>Free up time for your IT team.</span> </li>
+                        <li> <span>Sleep at night knowing that your data is safe.</span> </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon">
+            <div class="pure-u-1">
+                <blockquote>
+                    “The only archiving service that could provide me with a 100% guarantee that we could retrieve all the information we archive in 25 years time” 
+                    <span class="quoted">- Dan Watkins, Oxford Fertility Unit</span>
+                </blockquote>
+                <br/>
+                <span class="right our-customers splash-link">
+                    <a href="/pages/resources/">Our Customers</a>
+                </span>
+                <br/><br/>
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon mobile-item">
+            <div class="pure-u-1 center">
+                <span class="youtube-embed">
+                        <iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
+                </span><!--youtube-embed-->
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon fully-managed-service">
+            <div class="pure-u-1">
+                <h3>Fully Managed Service</h3>
+                <p>
+                    ‘Managed Service’ means more to us than just ensuring that the
+                    service is available. Arkivum’s service constantly monitors the
+                    health of the archive, upgrading and migrating as technology
+                    advances to ensure that data held within our service is always
+                    current and accessible. This means that:
+                </p>
+                <ul>
+                    <li>For every bit of data that you put in we will return it to you bit perfect in one year or 50 years or more.</li>
+                    <li>Arkivum provide the only digital archiving service underwritten by a 100% data integrity guarantee.</li>
+                </ul>
+                <br/>
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon partner">
+            <div class="pure-u-1">
+                <h3>Partners</h3>
+                <p>
+                    We sell our archiving service through a network of reseller and OEM partners.
+                </p>
+                <span class="splash-link right">
+                    <a href="/pages/partners">Find a Partner</a>
+                </span><br/><br/>
+
+                <p>
+                    Partner with Arkivum and OEM our digital archiving service with your own application or service and give your customers the best of both worlds: our digital preservation expertise and service, backed by your own expertise and industry knowledge.
+                </p>
+                <br/>
+                <span class="splash-link right">
+                    <a href="/pages/partners/#become">Become a Partner</a>
+                </span><br/><br/>
+                <ul>
+                    <li>Safe and Secure</li>
+                    <li>Easy to Access</li>
+                    <li>Fully Managed</li>
+                    <li>Reduces Expenditure</li>
+                    <li>Increases Efficiency</li>
+                    <li>Improves Compliance</li>
+                </ul>
+                <br/>
+            </div>
+        </div>
+        
+        <div class="pure-g-r content-ribbon">
+            <div class="pure-u-1-4">
+                <div class="l-box">
+                    <img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/iso-cert-icon.jpg"
+                         alt="ISO Cert icon">
+                </div>
+            </div>
+
+            <div class="pure-u-3-4">
+                <p>
+                    Arkivum is certified to ISO27001 and is audited on a 6 monthly basis. Combined with the digital preservation best practices (for example ISO standards on Open Archive Information Systems and Trusted Digital Repositories) this means that Arkivum can guarantee the data held within its service – Arkivum’s SLA is backed by worldwide insurance. Arkivum’s certified and auditable approach means the service can enable customers to meet a range of regulatory compliance requirements for records and document retention, including 21CFRPart11, EduraLex Volume 4 Annex 11, and UK specific requirements.&copy;
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon partner mobile-item">
+            <div class="pure-u-1">
+                <span class="share"><!-- Share bar including, ShareThis, Twitter, LinkedIn and YouTube -->
+                    <div class="cl-effect-2-right"><!--SVG icons using the iconmonstr DocPad plugin-->
+                        <span class="share-icon-box">
+                            <%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
+                        </span>
+                        <a href="https://twitter.com/Arkivum"><span class="share-icon-box">
+                            <%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
+                        </span></a>
+                        <a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
+                            <%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
+                        </span></a>
+                        <a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
+                            <%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
+                        </span></a>
+                    </div>
+                </span><!-- share-->
+            </div>
+        </div>
+
+        <div class="pure-g-r content-ribbon partner">
+            <div class="pure-u-1">
+                <h3>About Us</h3>
+                <p>
+                    Arkivum is an established provider of data archiving solutions, including the industry leading A-Stor data archiving service, which provides a fully-managed and secure service for long-term data retention with online access and a guarantee of data integrity that’s part of our Service Level Agreement and backed by worldwide insurance. 
+                    <br><br>
+                    Our links with University of Southampton IT Innovation Centre means that we have direct access to state-of-the-art research in digital preservation that helps us meet our commitments to our customers. This is complemented by a team at Arkivum that brings strong software skills together with in-depth experience in data centre operations and robust and reliable storage system implementation. 
+                </p><br>
+            </div><!--pure-u-1-->
+        </div><!--pure-g-r partner-->
+
+    </div>
+    

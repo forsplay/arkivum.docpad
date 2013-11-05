@@ -1,7 +1,7 @@
 ```
 title: How to Achieve Effective Long Term Retention and Access To Research Data
 layout: whitepaper
-pdf: /pages/resources/webinars/RDMWebinar1-30Apr13.pdf
+pdf: /pages/resources/videos/RDMWebinar1-30Apr13.pdf
 desc: The first in the Research Data Management Webinar Series
 video: 10
 ```

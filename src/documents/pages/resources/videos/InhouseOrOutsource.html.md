@@ -1,7 +1,7 @@
 ```
 title: Research Data Webinar 2: In-house or Outsource?
 layout: whitepaper
-pdf: /pages/resources/webinars/Research-Data-Webinar-2-Inhouse-or-Outsource-May-2013.pdf
+pdf: /pages/resources/videos/Research-Data-Webinar-2-Inhouse-or-Outsource-May-2013.pdf
 desc: The second in the Research Data Management Webinar Series
 video: 11
 ```
