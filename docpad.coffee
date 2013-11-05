@@ -75,6 +75,18 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		# Get the next four events from this week's Sunday.
+		getEventsFromSunday: (limit=4) ->
+			now = new Date()
+			o = now.getDay() * 24 * 60 * 60 * 1000
+			temp = new Date(now - o)
+			lastSunday = new Date(temp.getFullYear(), temp.getMonth(), temp.getDate())
+			
+			events = @getCollection('events').findAll({event:{$gte:lastSunday}}).toJSON()
+			if events.length > limit then events.length = limit
+			
+			return events
+
 
 	# =================================
 	# Collections
@@ -102,7 +114,7 @@ docpadConfig = {
 			database.findAllLive({video: $exists: true}, [video:1,title:1])
 
 		events: (database) ->
-			database.findAllLive({event: $exists: true}, [event:1,title:1])
+			database.findAllLive({event: $exists: true}, [event:1])
 
 		news: (database) ->
 			database.findAllLive({tags:$has:'news'}, [date:-1])

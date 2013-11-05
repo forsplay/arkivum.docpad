@@ -1,0 +1,16 @@
+<nav class="linklist">
+	<% for document in @getEventsFromSunday(4): %>
+		<li>
+			<a href="<%= document.url %>"><%= document.title %></a>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= document.postDate %></span>
+			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
+		</li>
+		<br>
+	<% end %>
+</nav>
