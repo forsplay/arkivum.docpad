@@ -34,5 +34,3 @@ The Data Protection Act 1998 gives you the right to access the information that 
 Contacting Us
 
 If there are any questions regarding this privacy policy you may contact us
-
-- See more at: http://arkivum.com/content/privacy#sthash.X4LjXUPu.dpuf

@@ -6,11 +6,7 @@ mobileMenu: 1
 tags: ['page','left_sidebar_menu-item']
 ---
 
-<p>
-	All our News & Events are listed below etc etc etc
-</p>
-
-<h4>News</h4>
+<h3>News</h3>
 <nav class="linklist">
 	<% for document in @getCollection('news').toJSON(): %>
 		<li>
@@ -29,8 +25,7 @@ tags: ['page','left_sidebar_menu-item']
 </nav>
 
 <br>
-
-<h4 id="casestudies">Events</h4>
+<h3 id="casestudies">Events</h3>
 <%- @partial('events.html.eco') %>
 
 <br>
