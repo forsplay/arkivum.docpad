@@ -25,7 +25,7 @@ tags: ['page','left_sidebar_menu-item']
 </nav>
 
 <br>
-<h3 id="casestudies">Events</h3>
+<h3 id="events">Events</h3>
 <%- @partial('events.html.eco') %>
 
 <br>

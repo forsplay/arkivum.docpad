@@ -14,7 +14,9 @@
     "Michael D Mooring <mike@mdm.cm> (https://github.com/mikeumus)"
   ],
   "contributors": [
-    "Michael D Mooring <mike@mdm.cm> (https://github.com/mikeumus)"
+    "Michael D Mooring <mike@mdm.cm> (https://github.com/mikeumus)",
+    "Jeffrey Johnson <jeff@mdm.cc> (https://github.com/ofshard)",
+    "Cathy Brode <cathy.brode@arkivum.com> (https://github.com/cathybrode)"
   ],
   "bugs": {
     "url": "https://github.com/MassDistributionMedia/arkivum.docpad/issues"
@@ -33,7 +35,7 @@
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-marked": "~2.1.1",
-    "docpad-plugin-partials": "~2.8.0",
+    "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-related": "~2.0.5",
     "docpad-plugin-text": "~2.3.1",
     "docpad-plugin-ghpages": "~2.4.0",
