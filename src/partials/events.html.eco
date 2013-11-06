@@ -4,7 +4,7 @@
 			<a href="<%= document.url %>"><%= document.title %></a>
 			<% if document.postDate: %>
 				&raquo;
-				<span><%= document.postDate %></span>
+				<span><%= document.postDate.toLocaleDateString('en-GB', @options) %></span>
 			<% end %>
 			<% if document.desc: %>
 				<br>

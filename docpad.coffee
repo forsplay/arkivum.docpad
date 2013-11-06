@@ -81,6 +81,12 @@ docpadConfig = {
 			o = now.getDay() * 24 * 60 * 60 * 1000
 			temp = new Date(now - o)
 			lastSunday = new Date(temp.getFullYear(), temp.getMonth(), temp.getDate())
+			options = 
+				year: "numeric"
+				month: "numeric"
+				day: "numeric"
+			options.timeZone = "UTC"
+			options.timeZoneName = "short"
 			
 			events = @getCollection('events').findAll({event:{$gte:lastSunday}}).toJSON()
 			if events.length > limit then events.length = limit
