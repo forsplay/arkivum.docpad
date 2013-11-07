@@ -3,6 +3,7 @@ title: Archiving Is No Toy Story
 layout: post
 tags: ['post',archiving','backup','pixar']
 postDate: '2012-06-20'
+desc: Pixar needed an archiving solution
 ```
 
 With data becoming increasingly more valuable and compliance driven regulations at every turn, a plan on how to preserve data that you don’t require regular access to is essential. And let’s be clear here we’re not talking about back-up but archiving. 
