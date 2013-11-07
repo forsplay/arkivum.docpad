@@ -4,7 +4,7 @@
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
 			&raquo;
-			<span><%= moment(document.event).format('YYYY-MM-DD') %></span>
+			<span><%= moment(document.event).format(@dateFormat) %></span>
 			<% if document.desc: %>
 				<br>
 				<sub><%= document.desc %></sub>

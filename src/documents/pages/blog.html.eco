@@ -10,8 +10,10 @@ tags: ['page','blog','left_sidebar_menu-item']
 	<% for document in @getCollection('posts').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
-			&raquo;
-			<span><%= document.postDate %></span>
+			<% if document.postDate: %>
+				&raquo;
+				<span><%= @moment(document.postDate).format(@dateFormat) %></span>
+			<% end %>
 		</li>
 	<% end %>
 </nav> 

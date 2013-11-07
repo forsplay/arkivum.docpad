@@ -50,6 +50,8 @@ docpadConfig = {
 			]
 		
 		moment: require 'moment'
+		dateFormat: 'YYYY-MM-DD'
+		# See http://momentjs.com/docs/#/displaying/format/ for options.
 
 
 
@@ -106,7 +108,7 @@ docpadConfig = {
 			database.findAllLive({pageOrder: $exists: true}, [pageOrder:1,title:1])
 
 		posts: (database) ->
-			database.findAllLive({tags:$has:'post'}, [date:-1])
+			database.findAllLive({tags:$has:'post'}, [postDate:-1, date:-1])
 
 		# Case Studies, Brochures, Whitepapers, Videos, Arkivum collections
 		casestudies: (database) ->
@@ -125,7 +127,7 @@ docpadConfig = {
 			database.findAllLive({event: $exists: true}, [event:1])
 
 		news: (database) ->
-			database.findAllLive({tags:$has:'news'}, [date:-1])
+			database.findAllLive({tags:$has:'news'}, [postDate:-1, date:-1])
 
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->

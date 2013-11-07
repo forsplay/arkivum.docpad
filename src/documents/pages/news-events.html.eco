@@ -13,7 +13,7 @@ tags: ['page','left_sidebar_menu-item']
 			<a href="<%= document.url %>"><%= document.title %></a>
 			<% if document.postDate: %>
 				&raquo;
-				<span><%= document.postDate %></span>
+				<span><%= @moment(document.postDate).format(@dateFormat) %></span>
 			<% end %>
 			<% if document.desc: %>
 				<br>
