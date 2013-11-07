@@ -48,6 +48,8 @@ docpadConfig = {
 				"http://code.jquery.com/jquery-1.10.1.min.js"
 				"/scripts/script.js"
 			]
+		
+		moment: require 'moment'
 
 
 

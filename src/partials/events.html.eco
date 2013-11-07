@@ -1,11 +1,10 @@
+<% moment = @moment %>
 <nav class="linklist">
 	<% for document in @getEventsFromSunday(4): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
-			<% if document.postDate: %>
-				&raquo;
-				<span><%= document.postDate.toLocaleDateString('en-GB', @options) %></span>
-			<% end %>
+			&raquo;
+			<span><%= moment(document.event).format('YYYY-MM-DD') %></span>
 			<% if document.desc: %>
 				<br>
 				<sub><%= document.desc %></sub>
