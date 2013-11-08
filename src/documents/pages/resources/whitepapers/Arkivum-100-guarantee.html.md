@@ -2,7 +2,7 @@
 title: Arkivum's 100% Guarantee
 layout: whitepaper
 tags: ['whitepaper']
-whitepaper: 1
+whitepaper: 4
 desc: Provides background to Arkivum's 100% guarantee of data integrity.
 pdf: /pages/resources/whitepapers/Arkivum100guarentee.pdf
 ```
