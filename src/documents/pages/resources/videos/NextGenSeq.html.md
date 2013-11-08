@@ -1,5 +1,6 @@
 ```
 title: Digital Archiving In Next Generation Sequencing 
+layout: whitepaper
 pdf: /pages/resources/videos/ArkivumNGS-Presentation2012.pdf
 desc: Next Generation Sequencing - Presentation 
 video: 19

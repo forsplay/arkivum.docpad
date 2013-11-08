@@ -4,7 +4,7 @@ layout: whitepaper
 tags: ['whitepaper']
 whitepaper: 4
 desc: Provides background to Arkivum's 100% guarantee of data integrity.
-pdf: /pages/resources/whitepapers/Arkivum100guarentee.pdf
+pdf: /pages/resources/whitepapers/Arkivum100Guarantee.pdf
 ```
 
 ## BACKGROUND
