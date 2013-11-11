@@ -33,8 +33,24 @@
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 
 
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+	<link rel="stylesheet" type="text/css" href="http://assets.cookieconsent.silktide.com/current/style.min.css"/>
+	<script type="text/javascript" src="http://assets.cookieconsent.silktide.com/current/plugin.min.js"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+	cc.initialise({
+		cookies: {
+			social: {},
+			analytics: {}
+		}
+	});
+	// ]]>
+	</script>
+	<!-- End Cookie Consent plugin -->
+
+	<script type="text/plain" class="cc-onconsent-analytics" src="https://secure.leadforensics.com/js/8303.js"></script>
 	<script type="text/javascript">var switchTo5x=true;</script>
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/plain" class="cc-onconsent-social" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "183d6ec4-2e61-4fcb-a656-3f323bf24ada", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body>

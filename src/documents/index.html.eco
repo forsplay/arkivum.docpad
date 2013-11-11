@@ -44,7 +44,7 @@ title: 'Home'
         <div class="pure-g-r content-ribbon mobile-item">
             <div class="pure-u-1 center">
                 <span class="youtube-embed">
-                        <iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>
+                        <!--<iframe class="animated"id="youtubeEmbed" width="100%" height="100%" src="//www.youtube.com/embed/XvsnZ5vAYQw?rel=0" frameborder="0" allowfullscreen></iframe>-->
                 </span><!--youtube-embed-->
             </div>
         </div>
