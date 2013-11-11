@@ -1,7 +1,7 @@
 ```
 title: The Carrot and the Stick
 layout: post
-tags: ['post',archiving','backup','4C']
+tags: ['post']
 postDate: '2013-10-29'
 desc: 4C project blog post
 ```

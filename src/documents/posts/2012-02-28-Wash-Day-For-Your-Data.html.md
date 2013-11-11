@@ -1,7 +1,7 @@
 ```
 title: Wash Day for Your Data
 layout: post
-tags: ['post',archiving','media']
+tags: ['post']
 postDate: '2012-02-28'
 desc: Matthew guest blog for Presto
 ```

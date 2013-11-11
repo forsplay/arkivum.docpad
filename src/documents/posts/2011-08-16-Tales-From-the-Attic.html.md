@@ -1,7 +1,7 @@
 ```
 title: Tales From the Attic
 layout: post
-tags: ['post',archiving','media']
+tags: ['post']
 postDate: '2011-08-16'
 desc: Matthew guest blog for Presto
 ```

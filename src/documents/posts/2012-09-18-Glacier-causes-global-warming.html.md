@@ -1,7 +1,7 @@
 ```
 layout: post
 title: Glacier causes global warming
-tags: ['post','archiving','google','glacier']
+tags: ['post','glacier']
 postDate: '2012-09-18'
 desc: Amazon's Glacier 
 ```

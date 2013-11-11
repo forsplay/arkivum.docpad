@@ -1,7 +1,7 @@
 ```
 title: DNA as Storage Panacea?
 layout: post
-tags: ['post',archiving','media']
+tags: ['post']
 postDate: '2013-02-24'
 desc: Matthew guest blog for Presto
 ```

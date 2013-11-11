@@ -1,7 +1,7 @@
 ```
 title: Archiving Is No Toy Story
 layout: post
-tags: ['post',archiving','backup','pixar']
+tags: ['post','pixar']
 postDate: '2012-06-20'
 desc: Pixar needed an archiving solution
 ```

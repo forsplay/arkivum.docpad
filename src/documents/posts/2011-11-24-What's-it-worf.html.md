@@ -1,7 +1,7 @@
 ```
 title: What's it worf?
 layout: post
-tags: ['post',archiving','media']
+tags: ['post']
 postDate: '2011-11-24'
 desc: Matthew guest blog for Presto
 ```

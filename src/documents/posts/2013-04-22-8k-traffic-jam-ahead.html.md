@@ -1,7 +1,7 @@
 ```
 title: 8k traffic jam ahead
 layout: post
-tags: ['post',archiving','media']
+tags: ['post']
 postDate: '2013-04-22'
 desc: Matthew guest blog for Presto
 ```
