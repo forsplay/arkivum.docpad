@@ -10,7 +10,7 @@
         		<%- @partial('menu.html.eco', {menuItems: @generateMenu(@document.url, 'left_sidebar_menu')}) %>
     		</nav>
 			<span class="g-stamp center">
-				<img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/guaranteed-stamp.png" alt="arkivum guarantee">
+				<img src="/images/guaranteed-stamp.png" alt="arkivum guarantee">
 			</span>
 			<span class="contact-us">
 		        <span class="contact-us-copy">Contact Us</span>

@@ -17,7 +17,7 @@ Naturally, your data is kept secure using industry-standard 256bit AES encryptio
 
 <br> 
 <span id="cloud" class="muted">.</span>
-<img src="https://googledrive.com/host/0B9LVk4xbDIJTYXZIZG9laGE0cjA/ARKIVUM-DRAWING-PORTRAIT-WITH-TEXT.jpg" alt="Arkivum drawing portrait with text jpeg"/>
+<img src="/images/AStor.jpg" alt="How A-Stor works"/>
 
 ### Available as public or private cloud
 
@@ -26,7 +26,7 @@ OSCAR: secure archive for data within the corporate firewall
 We understand that some organisations do not allow their data to go outside of their firewall. OSCAR provides all of the features and guarantees as A-Stor managed service on your premises.
 
 <span id="integrate" class="muted">.</span><span id="why" class="muted">.</span>
-<img src="https://googledrive.com/host/0B9LVk4xbDIJTYXZIZG9laGE0cjA/CUSTOMER-DRAWING-PORTRAIT-WITH-TEXT.jpg" alt="Arkivum customer drawing with text jpeg"/>
+<img src="/images/OSCAR.jpg" alt="How OSCAR works"/>
 
 ### Seamless Integration with other systems
 

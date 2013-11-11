@@ -99,7 +99,7 @@ title: 'Home'
         <div class="pure-g-r content-ribbon">
             <div class="pure-u-1-4">
                 <div class="l-box">
-                    <img src="https://googledrive.com/host/0B9LVk4xbDIJTdngwVUpZU0dCTE0/iso-cert-icon.jpg"
+                    <img src="/images/ISO-cert-icon.png"
                          alt="ISO Cert icon">
                 </div>
             </div>
