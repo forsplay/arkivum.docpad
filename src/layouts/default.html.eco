@@ -71,7 +71,6 @@
 	<script type="text/plain" class="cc-onconsent-analytics" src="https://secure.leadforensics.com/js/8303.js"></script>
 	<script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/plain" class="cc-onconsent-social" src="http://w.sharethis.com/button/buttons.js"></script>
-	<script type="text/javascript">stLight.options({publisher: "183d6ec4-2e61-4fcb-a656-3f323bf24ada", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body>
 

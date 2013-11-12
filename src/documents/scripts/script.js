@@ -17,8 +17,8 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	}
 	*/
 
-	// ShareThie
-	Y.one('#shareIcon').on('click', function(){
+	// ShareThis
+	Y.one('#shareThisLink #shareIcon').on('click', function(){
 		Y.one('.sharethis').toggleClass('block');
 	});
 
