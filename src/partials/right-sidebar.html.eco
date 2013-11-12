@@ -5,11 +5,6 @@
 			<span class="box animated"><span>
 				<span class="share"><!-- Share bar including, ShareThis, Twitter, LinkedIn and YouTube -->
 					<div class="cl-effect-2-right"><!--SVG icons using the iconmonstr DocPad plugin-->
-						<span class="share-icon-box">
-							<a href="#" title="ShareThis">
-							<%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
-							</a>
-						</span>
 						<a href="https://twitter.com/Arkivum" title="Arkivum's Twitter"><span class="share-icon-box">
 							<%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
 						</span></a>
