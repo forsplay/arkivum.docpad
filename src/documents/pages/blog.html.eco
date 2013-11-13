@@ -6,7 +6,7 @@ mobileMenu: 1
 tags: ['page','blog','left_sidebar_menu-item']
 ---
 
-<nav class="linklist"> 
+<nav class="linklist blog"> 
 	<% for document in @getCollection('posts').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
@@ -15,5 +15,6 @@ tags: ['page','blog','left_sidebar_menu-item']
 				<span><%= @moment(document.postDate).format(@dateFormat) %></span>
 			<% end %>
 		</li>
+		<br>
 	<% end %>
 </nav> 
