@@ -31,7 +31,7 @@ docpadConfig = {
 				"""
 
 			# The website author's name
-			author: "MDM"
+			author: "Mass Distribution Media"
 
 			# The website author's email
 			email: "mike@mdm.cm"
