@@ -552,6 +552,8 @@ blockquote{
     list-style: circle;
 }
 
+a.anchor { position:relative; top:-130px; visibility:hidden; }
+
 @media screen and (max-width: 960px){
     #attrSel{
         display: inline-block;
