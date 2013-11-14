@@ -99,7 +99,8 @@ title: 'Home'
         <div class="pure-g-r content-ribbon">
             <div class="pure-u-1-4">
                 <div class="l-box">
-                    <img src="/images/ISO-cert-icon.png"
+                    <img class="iso-cert-img" 
+                         src="/images/ISO-cert-icon.png"
                          alt="ISO Cert icon">
                 </div>
             </div>
@@ -115,18 +116,26 @@ title: 'Home'
             <div class="pure-u-1">
                 <span class="share"><!-- Share bar including, ShareThis, Twitter, LinkedIn and YouTube -->
                     <div class="cl-effect-2-right"><!--SVG icons using the iconmonstr DocPad plugin-->
-                        <span class="share-icon-box">
+                        <span id="shareThisLink" class="share-icon-box">
                             <%- @getIconmonstrBlock('share','shareIcon','share-icon icon-share') %>
                         </span>
-                        <a href="https://twitter.com/Arkivum"><span class="share-icon-box">
+
+                        <a href="https://twitter.com/Arkivum" title="Arkivum's Twitter"><span class="share-icon-box">
                             <%- @getIconmonstrBlock('twitter2','shareIcon','share-icon tw-icon') %>
                         </span></a>
-                        <a href="http://www.linkedin.com/company/Arkivum"><span class="share-icon-box">
+                        <a href="http://www.linkedin.com/company/Arkivum" title="Arkivum's LinkedIn"><span class="share-icon-box">
                             <%- @getIconmonstrBlock('linkedin2','shareIcon','share-icon ln-icon') %>
                         </span></a>
-                        <a href="http://www.youtube.com/user/ArkivumUK"><span class="share-icon-box">
+                        <a href="http://www.youtube.com/user/ArkivumUK" title="Arkivum's YouTube"><span class="share-icon-box">
                             <%- @getIconmonstrBlock('youtube2','shareIcon','share-icon yt-icon') %>
                         </span></a>
+                    <span class="sharethis">
+                        <span class='st_twitter_large' displayText='Tweet'></span>
+                        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                        <span class='st_googleplus_large' displayText='Google +'></span>
+                        <span class='st_facebook_large' displayText='Facebook'></span>
+                        <span class='st_email_large' displayText='Email'></span>
+                    </span>
                     </div>
                 </span><!-- share-->
             </div>

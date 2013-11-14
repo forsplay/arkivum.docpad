@@ -42,17 +42,17 @@
 	<script type="text/javascript">
 	// <![CDATA[
 	cc.initialise({
-	cookies: {
-		social: {},
-		analytics: {},
-		necessary: {}
-	},
-	settings: {
-		consenttype: "implicit",
-		hideprivacysettingstab: true,
-		disableallsites: true
-	}
-});
+		cookies: {
+			social: {},
+			analytics: {},
+			necessary: {}
+		},
+		settings: {
+			consenttype: "implicit",
+			hideprivacysettingstab: true,
+			disableallsites: true
+		}
+	});
 	// ]]>
 	</script>
 	<!-- End Cookie Consent plugin -->

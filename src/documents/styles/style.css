@@ -192,6 +192,7 @@ body .primary-button {
                 fill: red;
             }
             .icon-share{
+                cursor: pointer;
                 height: 35px;
                 width: 35px;
                 opacity: 1;
@@ -216,7 +217,7 @@ body .primary-button {
 
         .share{
             height: 55px;
-            width: inherit;
+            width: 264px;
             display: block;
             list-style: none;
             margin: 3px auto 93px auto;
@@ -579,4 +580,5 @@ blockquote{
     .mobile-item{display: block;}
     .share-icon-box{padding: 0 2%}
     .youtube-embed{height: 202px;width: 84%;}
+    .iso-cert-img{width: 111px;}
 }

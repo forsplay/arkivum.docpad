@@ -18,8 +18,8 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	*/
 
 	// ShareThis
-	Y.one('#shareThisLink #shareIcon').on('click', function(){
-		Y.one('.sharethis').toggleClass('block');
+	Y.all('#shareThisLink #shareIcon').on('click', function(){
+		Y.all('.sharethis').toggleClass('block');
 	});
 
 	// Left sidebar dropdown menus
