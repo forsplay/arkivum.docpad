@@ -24,9 +24,6 @@
 	<!-- Icon -->
     <link rel="shortcut icon" href="https://googledrive.com/host/0B9LVk4xbDIJTWVRrdzFhWlFxNG8/arkivum-icon.png">
 
-    <!--[if IE]>
-	  <link rel="stylesheet" type="text/css" href="/style/ie.css" />
-	<![endif]-->
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
