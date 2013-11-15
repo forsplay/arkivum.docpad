@@ -14,6 +14,10 @@ tags: ['page','blog','left_sidebar_menu-item']
 				&raquo;
 				<span><%= @moment(document.postDate).format(@dateFormat) %></span>
 			<% end %>
+			<% if document.desc: %>
+				<br>
+				<sub><%= document.desc %></sub>
+			<% end %>
 		</li>
 		<br>
 	<% end %>
