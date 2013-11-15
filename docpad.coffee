@@ -132,13 +132,13 @@ docpadConfig = {
 		# Menu drop down collections
 		left_sidebar_menu: (database) ->
 			database.findAllLive({tags:$has:'left_sidebar_menu-item'}, [date:-1])
-            .on('add', (model) ->
-                #require('fs').appendFileSync 'left-sidebar.log', JSON.stringify(model) + "\n"
-                urlDupe = @any (_model) ->
-                    return _model.get('url') is model.get('url')
-                
-                if urlDupe then return false
-            )
+			.on('add', (model) ->
+				#require('fs').appendFileSync 'left-sidebar.log', JSON.stringify(model) + "\n"
+				urlDupe = @any (_model) ->
+					return _model.get('url') is model.get('url')
+
+				if urlDupe then return false
+			)
 
 		mobilemenu: (database) ->
 			database.findAllLive({mobileMenu: $exists: true}, [mobileMenu:1,title:1])
@@ -173,11 +173,11 @@ docpadConfig = {
 					next()
 
 	# =================================
-    # Plugin Configuration
+	# Plugin Configuration
 
-    # Skip Unsupported Plugins
-    # Set to `false` to load all plugins whether or not they are compatible with our DocPad version or not
-    skipUnsupportedPlugins: false  # default: true
+	# Skip Unsupported Plugins
+	# Set to `false` to load all plugins whether or not they are compatible with our DocPad version or not
+	skipUnsupportedPlugins: false  # default: true
 
 	# Enabled Plugins
 	enabledPlugins: 
@@ -185,10 +185,13 @@ docpadConfig = {
 		circleeffects: false
 
 	plugins:
-	    ghpages:
-	        deployRemote: 'origin'
-	        deployBranch: 'gh-pages'
+		ghpages:
+			deployRemote: 'origin'
+			deployBranch: 'gh-pages'
 
+		sitemap:
+			cachetime: 600000
+			changefreq: 'weekly'
 }
 
 
