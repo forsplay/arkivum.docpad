@@ -27,8 +27,6 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	var navEnter = function(e){
 		if (!e.currentTarget.one('.nav') || navLast === e.currentTarget) return;
 		
-		console.log('enter', e.currentTarget);
-		
 		e.currentTarget.one('.nav').setStyle('display', 'block');
 		
 		if (navLast)
@@ -42,7 +40,7 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	var navSubHeight = 109;
 	Y.all('nav.sidebar-menu li .nav').each(function(el) {
 		
-		el.setStyle('height', navMaxHeight);
+		el.setStyle('height', navSubHeight);
 	});
 
 	// Mobile menu
