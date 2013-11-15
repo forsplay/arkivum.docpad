@@ -3,7 +3,7 @@ title: Living a Lifetime in 60 Seconds
 layout: post
 tags: ['post']
 postDate: '2012-05-29'
-desc: Living a Lifetime in 60 Seconds
+desc: What 20 years of active archive management looks like mapped onto 60 seconds
 ```
 <img src="/images/keeping-content-alive.png" alt="Keeping Content Alive"/>
 

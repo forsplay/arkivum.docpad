@@ -13,7 +13,7 @@ The back-up files for the previous month had failed to run and yes that’s righ
 
 Had Pixar implemented an effective archiving service much of the ensuing panic which followed the depression of the delete key could have been avoided. Archiving provides enterprises with a highly effective way to store data that isn’t constantly being accessed whilst freeing up space on existing systems notwithstanding the significant cost and environmental benefits that can be achieved. If you want to learn more about the Pixar experience there’s a neat little animated video which documents the whole story and is definitely worth a watch, see [here](http://www.youtube.com/watch?feature=player_embedded&v=EL_g0tyaIeE).  
 
-With our news pages being continually littered with stories of lost data and expensive lawsuits to boot – the time to plan is now, so whether you need to keep data for one year or 50 archiving offers the perfect option.  [](www.arkivum.com)
+With our news pages being continually littered with stories of lost data and expensive lawsuits to boot – the time to plan is now, so whether you need to keep data for one year or 50 archiving offers the perfect option.  
 
 **Notes:**
 Source – [The Independent](http://www.independent.co.uk/arts-entertainment/films/news/pixars-billiondollar-delete-button-nearly-lost-toy-story-2-animation-7758083.html)

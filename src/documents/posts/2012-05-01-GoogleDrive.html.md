@@ -3,7 +3,7 @@ title: Behind The Hype - How Will The Enterprise React to Google Drive?
 layout: post
 tags: ['post']
 postDate: '2012-05-01'
-desc: Behind The Hype - How Will The Enterprise React to Google Drive?
+desc: The effect Google Drive will have on cloud storage providers.
 ```
 
 Last week saw the long anticipated arrival of Google Drive which is sure to get cloud storage providers such as Microsoft's SkyDrive, Apple's iCloud and Dropbox quaking in their boots as the technology giant leverages its existing links and stakes its claim in yet another market in its quest for world domination. Those not in the know will call it a cloud storage solution and yes technically it is because it stores your data in the cloud but this latest unmanaged method of storing your files is certain to get IT Directors across the land hastily adding it to their list of ‘not permitted’ applications.

@@ -3,7 +3,7 @@ title: Capex Headache – Storage Strategies to Make IT Work Harder
 layout: post
 tags: ['post']
 postDate: '2012-09-26'
-desc: Capex Headache – Storage Strategies to Make IT Work Harder
+desc: A report by IDC indicates that companies are being prompted to increase Capital Expenditure (Capex) to cope with a sharp escalation in data storage costs, in response to the ever increasing volume of digital data. As the report suggests raising your Capex budget is not the only solution to managing spiralling storage costs.This blog post looks at this in more detail.
 ```
 
 A recent report by IDC indicates that companies are being prompted to increase Capital Expenditure (Capex) to cope with a sharp escalation in data storage costs, in response to the ever increasing volume of digital data. As the report suggests raising your Capex budget is not the only solution to managing spiralling storage costs.

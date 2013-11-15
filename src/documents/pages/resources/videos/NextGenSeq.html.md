@@ -3,7 +3,7 @@ title: Digital Archiving In Next Generation Sequencing
 layout: whitepaper
 pdf: /pages/resources/videos/ArkivumNGS-Presentation2012.pdf
 desc: Next Generation Sequencing - Presentation 
-video: 19
+video: 18
 ```
 
 Following on from the sequencing of the human genome, DNA sequencing efficiency has increased by approxi­mately 100,000‑fold. Next Generation Sequencing technologies can now sequence the entire human genome in a few days, and this capabil­ity has led to new projects that are aimed at sequencing the genomes of individual humans and a broad swath of animal and plant species.

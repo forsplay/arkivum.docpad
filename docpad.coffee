@@ -27,7 +27,7 @@ docpadConfig = {
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				arkivum
+				long term data storage, guaranteed archive, genomics archive, healthcare data archive, research data archive, digital heritage archive, sap archive, Janet archive, Janet archiving, guaranteed data storage, n3 archive, gcloud archive, g-cloud archive, cloudstore archive,  data archiving managed service, digital archive managed service, cristie archive, s3 archive, tmf archive, etmf archive
 				"""
 
 			# The website author's name

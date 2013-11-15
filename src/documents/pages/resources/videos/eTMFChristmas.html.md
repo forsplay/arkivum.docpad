@@ -1,7 +1,7 @@
 ```
 title: An eTMF is for Life, Not Just for Christmas 
 layout: whitepaper
-pdf: /pages/resources/videos/pollresults.pdf
+pdf: /pages/resources/videos/PollResults.pdf
 desc: Life Sciences webinar. eTMF: Achieving archive compliance. Presented by Karen Redding of Phlexglobal, Eldin Rammell of Rammell Consulting and Matthew Addis of Arkivum
 video: 20
 ```
