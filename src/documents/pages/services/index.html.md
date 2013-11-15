@@ -8,31 +8,29 @@ tags: ['left_sidebar_menu-item']
  
 <br> 
 
-### How It Works <a class="anchor" id="how"></a>
+### <a class="anchor" id="how">&nbsp;</a> How It Works
 Arkivum’s storage is based on the principle that 3 copies are needed for absolute certainty that data is safe.  So using active integrity checking at all times, every one of your files is copied three times, with 2 copies held online in geographically separated data centres and the third held offline locked away in an escrow service.
 
 Reading and writing data is easy - a gateway appliance sits on you network and delivers your archive as a simple file system - files are simply copied to and from the file system.  Behind the scenes Arkivum’s systems take care of all the replication and integrity checking.  It’s like infinitely expandable, 100% guaranteed network storage.
 
 Naturally, your data is kept secure using industry-standard 256bit AES encryption, to which only you have the keys.
 
-<br> 
-<!--<span id="cloud" class="muted">.</span>-->
+<br>
 <img src="/images/AStor.jpg" alt="How A-Stor works"/>
 
-### Available as public or private cloud <a class="anchor" id="cloud"></a>
+### <a class="anchor" id="cloud">&nbsp;</a> Available as public or private cloud
 
 A-Stor: cloud based archiving as a service  
 OSCAR: secure archive for data within the corporate firewall
 We understand that some organisations do not allow their data to go outside of their firewall. OSCAR provides all of the features and guarantees as A-Stor managed service on your premises.
 
-<!--<span id="integrate" class="muted">.</span><span id="why" class="muted">.</span>-->
 <img src="/images/OSCAR.jpg" alt="How OSCAR works"/>
 
-### Seamless Integration with other systems <a class="anchor" id="integrate"></a>
+### <a class="anchor" id="integrate">&nbsp;</a> Seamless Integration with other systems
 
 Arkivum’s service acts like any other server on your network - it integrates into your environment, understands your permissions, and appears to your end users just like other servers. It also has a rich REST API.
 
-### Why Arkivum? <a class="anchor" id="why"></a>
+### <a class="anchor" id="why">&nbsp;</a> Why Arkivum?
 ✓ **Lower IT workloads** – Arkivum runs and manages the service, freeing up your internal IT resources.
 
 ✓ **Reduced cost** – Arkivum’s storage infrastructure provides benefits of a scaled service to every customer.
