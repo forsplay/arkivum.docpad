@@ -22,15 +22,28 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 		Y.all('.sharethis').toggleClass('block');
 	});
 
+	var navLast;
 	// Left sidebar dropdown menus
 	var navEnter = function(e){
-			e.currentTarget.one('.nav').setStyle('display','block');
+		if (!e.currentTarget.one('.nav') || navLast === e.currentTarget) return;
+		
+		console.log('enter', e.currentTarget);
+		
+		e.currentTarget.one('.nav').setStyle('display', 'block');
+		
+		if (navLast)
+			navLast.one('.nav').setStyle('display', 'none');
+		
+		navLast = e.currentTarget
 	};
-	var navLeave = function (e){
-			e.currentTarget.one('.nav').setStyle('display','none');
-	};
-	Y.one('.nav').delegate('mouseenter', navEnter, 'li' );
-	Y.one('.nav').delegate('mouseleave', navLeave, 'li' );
+	var navSidebarLi = Y.all('nav.sidebar-menu > ul > li');
+	navSidebarLi.on('mouseenter', navEnter);
+	
+	var navSubHeight = 109;
+	Y.all('nav.sidebar-menu li .nav').each(function(el) {
+		
+		el.setStyle('height', navMaxHeight);
+	});
 
 	// Mobile menu
 	Y.one('select').on('change', function(){
