@@ -7,7 +7,7 @@ tags: ['page','left_sidebar_menu-item']
 ---
 
 <h3>News</h3>
-<nav class="linklist">
+<nav class="linklist blog">
 	<% for document in @getCollection('news').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
@@ -29,4 +29,3 @@ tags: ['page','left_sidebar_menu-item']
 <%- @partial('events.html.eco') %>
 
 <br>
-
