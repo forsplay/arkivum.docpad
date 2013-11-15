@@ -68,7 +68,7 @@
 
 	</script>
 
-	<script type="text/plain" class="cc-onconsent-analytics" src="https://secure.leadforensics.com/js/8303.js"></script>
+	<script src="https://secure.leadforensics.com/js/8303.js"></script>
 	<script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/plain" class="cc-onconsent-social" src="http://w.sharethis.com/button/buttons.js"></script>
 </head>
