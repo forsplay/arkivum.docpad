@@ -6,11 +6,9 @@ mobileMenu: 1
 tags: ['page','left_sidebar_menu-item']
 ---
 
-<span id="brochures" class="muted">.</span>
-
 <br>
 
-<h4 id="casestudies">Case Studies</h4>
+<h4><a class="anchor" id="casestudies">&nbsp;</a> Case Studies</h4>
 <nav class="linklist">
 	<% for document in @getCollection('casestudies').toJSON(): %>
 		<li>
@@ -30,9 +28,7 @@ tags: ['page','left_sidebar_menu-item']
 
 <br>
 
-<span id="whitepapers" class="muted">.</span>
-
-<h4 id="brochures">Brochures</h4>
+<h4><a class="anchor" id="brochures">&nbsp;</a> Brochures</h4>
 <nav class="linklist">
 	<% for document in @getCollection('brochures').toJSON(): %>
 		<li>
@@ -50,11 +46,9 @@ tags: ['page','left_sidebar_menu-item']
 	<% end %>
 </nav>
 
-<br> 
+<br>
 
-<span id="videos" class="muted">.</span>
-
-<h4>Whitepapers & Articles</h4>
+<h4><a class="anchor" id="whitepapers">&nbsp;</a> Whitepapers & Articles</h4>
 <nav class="linklist">
 	<% for document in @getCollection('whitepapers').toJSON(): %>
 		<li>
@@ -74,7 +68,7 @@ tags: ['page','left_sidebar_menu-item']
 
 <br> 
 
-<h4>Webinars & Videos</h4>
+<h4><a class="anchor" id="videos">&nbsp;</a> Webinars & Videos</h4>
 <nav class="linklist">
 	<% for document in @getCollection('videos').toJSON(): %>
 		<li>
