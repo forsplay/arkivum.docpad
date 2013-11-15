@@ -211,7 +211,7 @@ body .primary-button {
             height: 26px;
             width: 26px;
             margin: 0 0 0 1%;
-            padding: 5% 4%;
+            padding: 0 10px;
             opacity: 0.777;
         }
 
