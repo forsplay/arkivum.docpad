@@ -54,7 +54,6 @@
 	</script>
 	<!-- End Cookie Consent plugin -->
 
-
 	<script type="text/plain" class="cc-onconsent-analytics">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-24471366-1']);
@@ -65,12 +64,11 @@
 		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
-
 	</script>
 
-	<script type="text/javascript" src="http://lead-123.com/js/8303.js" async="async"></script>
+	<script type="text/plain" class="cc-onconsent-analytics" src="/scripts/leadforensics.modified.js"></script>
 	<script type="text/javascript">var switchTo5x=true;</script>
-	<script type="text/plain" class="cc-onconsent-social" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/plain" class="cc-onconsent-social" src="/scripts/sharethis.buttons.js"></script>
 </head>
 <body>
 
