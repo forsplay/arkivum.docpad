@@ -4,10 +4,8 @@
   "description": "",
   "keywords": [
     "arkivum",
-    "docpad",
-    "website",
-    "purecss",
-    "yui purecss"
+    "docpad", "website",
+    "purecss", "yui purecss"
   ],
   "author": "Mass Distribution Media <mike@mdm.cm> (http://mdm.cm)",
   "maintainers": [
@@ -30,7 +28,7 @@
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.54.5",
+    "docpad": "~6.54.8",
     "docpad-plugin-cleanurls": "~2.5.1",
     "docpad-plugin-coffeescript": "~2.2.3",
     "docpad-plugin-eco": "~2.0.2",
@@ -40,8 +38,8 @@
     "docpad-plugin-text": "~2.3.2",
     "docpad-plugin-ghpages": "~2.4.0",
     "docpad-plugin-iconmonstr": "~2.0.15",
-    "moment": "~2.4.0",
-    "docpad-plugin-sitemap": "~2.0.1"
+    "docpad-plugin-sitemap": "~2.0.1",
+    "moment": "~2.4.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.3"

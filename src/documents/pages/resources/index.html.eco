@@ -9,7 +9,7 @@ tags: ['page','left_sidebar_menu-item']
 <br>
 
 <h4><a class="anchor" id="casestudies">&nbsp;</a> Case Studies</h4>
-<nav class="linklist">
+<nav class="linklist blog">
 	<% for document in @getCollection('casestudies').toJSON(): %>
 		<li>
 			<a href="<%= document.url %>"><%= document.title %></a>
