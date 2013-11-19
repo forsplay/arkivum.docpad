@@ -499,6 +499,7 @@ body .primary-button {
         display: block;
         position: fixed;
         top: 0;
+        z-index: 1;
         width: 826px;
         float: right;
         right: -548px;
