@@ -2,7 +2,7 @@
 title: Long-Term Data Storage - article in EBR and forthcoming webinar
 layout: whitepaper
 tags: ['news']
-postDate: 30/Sep/2013
+postDate: 2013-09-30
 pdf: /pages/news_events/EBR_Oct-13-Arkivumpp_10-14.pdf
 desc: The new edition of European Biopharmaceutical Review contains an article by Jim Cook, CEO of Arkivum. Read the article...
 ```

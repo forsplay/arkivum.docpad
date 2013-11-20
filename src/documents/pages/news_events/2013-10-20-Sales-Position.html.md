@@ -2,8 +2,8 @@
 title: Arkivum is hiring
 layout: whitepaper
 tags: ['news']
-postDate: 20/Oct/2013
-pdf: /pages/news_events/2013-10-Cristie-and-Arkivum-Partner.pdf
+postDate: 2013-10-07
+pdf: /pages/news_events/ArkivumJobSpecUKSalesManager7-10-2013.pdf
 desc: we're looking for successful sales professionals to join our team
 ```
 
