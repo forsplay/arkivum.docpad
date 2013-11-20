@@ -192,6 +192,7 @@ docpadConfig = {
 		sitemap:
 			cachetime: 600000
 			changefreq: 'weekly'
+			hostname: 'http://arkivum.com'
 }
 
 
