@@ -51,4 +51,27 @@ YUI().use('node', 'event', 'event-valuechange', function(Y) {
 	});
 	// http://yuilibrary.com/yui/docs/attribute/attribute-event.html
 
+	var nua = navigator.userAgent;
+	var is_native_android = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') < 0);
+	
+	if (is_native_android) {
+		console.log('is_android');
+		Y.one('#logo_svg').setStyles({
+			position: 'absolute',
+			top: '0'
+		});
+		Y.one('#logo_svg image').setStyles({
+			position: 'absolute'
+		});
+		Y.one('.mobile-menu').setStyles({
+			position: 'absolute',
+			margin: '0'
+		});
+		Y.one('#attrSel').setStyles({
+			position:'fixed',
+			top: '73px',
+			display: 'block',
+			margin: '0'
+		});
+	}
 }); // YUI closes
