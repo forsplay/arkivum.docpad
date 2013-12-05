@@ -79,6 +79,12 @@ arkivum.docpad uses the family of Din Pro fonts as per Arkivum's branding. These
 ## UK Privacy Compliance
 [CookieConsent](https://github.com/silktide/cookieconsent#cookie-consent) works by detecting a cookie containing the user's consent choice. Due to inconsistency problems with detection, a timer (in [`right-sidebar.html.eco`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/right-sidebar.html.eco)) was added to manually detect the cookie. YouTube video, LeadForensics, Google Analytics, ShareThis are all linked to CookieConsent.
 
+## Event of the Week
+See [Issue #2](https://github.com/MassDistributionMedia/arkivum.docpad/issues/2).
+
+## Sidebar Menu UX
+See [Issue #4](https://github.com/MassDistributionMedia/arkivum.docpad/issues/4).
+
 
 ## How to handle common errors
 
