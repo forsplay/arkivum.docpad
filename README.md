@@ -1,48 +1,88 @@
 # GitHub of Arkivum.com
 ![Arkivum.com homepage screenshot](https://googledrive.com/host/0B9LVk4xbDIJTbV8xNUIwVkZHOXM/Screenshot%20%281%29.png "Arkivum.com homepage screenshot")
 
-made from...
+made from [YUI Purecss](http://purecss.io/) skeleton for [DocPad](https://github.com/bevry/docpad).
 
-# [YUI Purecss](http://purecss.io/) skeleton for [DocPad](https://github.com/bevry/docpad)
-Simple, flexible and clean HTML, CSS, for popular user interface components and interactions.
+### Modules
 
-![Alt text](https://googledrive.com/host/0B9LVk4xbDIJTSWVYcU5fb0RUVVk/purecss-docpad.png "Screen shot of Purecss landing page template in google chrome on a local docpad server.")
+Arkivum.com uses the following DocPad plugins:
+- [docpad-plugin-cleanurls](https://github.com/docpad/docpad-plugin-cleanurls)
+- [docpad-plugin-coffeescript](https://github.com/docpad/docpad-plugin-coffeescript)
+- [docpad-plugin-eco](https://github.com/docpad/docpad-plugin-eco)
+- [docpad-plugin-marked](https://github.com/docpad/docpad-plugin-marked)
+- [docpad-plugin-partials](https://github.com/docpad/docpad-plugin-partials)
+- [docpad-plugin-text](https://github.com/docpad/docpad-plugin-text)
+- [docpad-plugin-ghpages](https://github.com/docpad/docpad-plugin-ghpages)
+- [docpad-plugin-iconmonstr](https://github.com/mikeumus/docpad-plugin-iconmonstr)
+- [docpad-plugin-sitemap](https://github.com/docpad/docpad-plugin-sitemap)
+
+and the [moment.js](https://github.com/moment/moment) module.
 
 ## Getting Started
+
+1. [Install Node.js](http://nodejs.org/download/) (includes NPM with install)
 
 1. [Install DocPad](https://github.com/bevry/docpad)
 
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/MassDistributionMedia/yui-purecss.docpad.git
-	cd yui-purecss.docpad
+	git clone git://github.com/MassDistributionMedia/arkivum.docpad.git
+	cd arkivum.docpad
 	npm install
 	docpad run
 	```
 
-1. [Open http://localhost:9778/](http://localhost:9778/)
+1. Open [http://localhost:9778/](http://localhost:9778/) locally in a internet browser. We recommend [Google Chrome](https://www.google.com/intl/en/chrome/browser/) or [Mozilla Firefox](http://www.mozilla.org/en-US/firefox/new/?f=26&utm_expid=71153379-28.ZuzIY8GHTdmX0QtrDFcQLQ.1&utm_referrer=https%3A%2F%2Fwww.google.com%2F). 
 
-1. Start hacking away by modifying the `src` directory
+1. Start hacking away by modifying the [`src`](https://github.com/MassDistributionMedia/arkivum.docpad/tree/master/src) directory
 
+## Themeing
 
-## I'm getting EMFILE errors
+#### Skeleton Origin
+
+As mentioned above arkivum.docpad was sculpted from the [YUI Purecss](http://purecss.io/) DocPad skeleton. 
+
+#### Default template
+
+All pages use the [default page template](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/layouts/default.html.eco) found via the following path: [`arkivum.docpad/src/layouts/default.html.eco`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/layouts/default.html.eco).
+
+For example the ["post"](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/layouts/post.html.eco) page template's meta data uses the default theme as below:
+```
+---
+layout: default
+---
+```
+The default template makes up the header, footer and containing structure for the sidebar partials and inner `@content`.
+
+#### Sidebar partials
+
+Both the left and right sidebars are their own partials, [`left-sidebar.html.eco`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/left-sidebar.html.eco) & [`right-sidebar.html.eco`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/right-sidebar.html.eco)
+
+#### Layout Breakdown 
+![arkivum homepage break down](https://googledrive.com/host/0B9LVk4xbDIJTbV8xNUIwVkZHOXM/Home%20%20%20Arkivum.png)
+
+## Images
+
+All images are SVGs excluding only the header/footer background images and the 100% Guaranteed image which are located at [`src/files/images`](https://github.com/MassDistributionMedia/arkivum.docpad/tree/master/src/files/images).
+Arkivum header and stamp logos are stored as SVG code in partials at [`src/partials`](https://github.com/MassDistributionMedia/arkivum.docpad/tree/master/src/partials):
+- [arkivum-logo.html](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/arkivum-logo.html)
+- [arkivum-A-stamp.html](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/arkivum-A-stamp.html)
+
+The blue checkmark SVGs are as a svg file at [`src/files/images/check-6-blue-icon.svg`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/files/images/check-6-blue-icon.svg).
+The remainder of the SVG icons such as the social or contact icons originate from the [iconmonstr DocPad plugin](https://github.com/mikeumus/docpad-plugin-iconmonstr). 
+
+## Fonts
+
+arkivum.docpad uses the family of Din Pro fonts as per Arkivum's branding. These are locaed at [`src/files/fonts`](https://github.com/MassDistributionMedia/arkivum.docpad/tree/master/src/files/fonts).
+
+## How to handle common errors
+
+#### I'm getting EMFILE errors
 
 [See here for the reason why and the solution](http://docpad.org/docs/troubleshoot#i-m-getting-emfile-too-many-open-files)
 
 
 ## License
 
-This skeleton is made ["public domain"](http://en.wikipedia.org/wiki/Public_domain) using the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/), as such before you publish your website you should place your desired license here and within the `LICENSE.md` file.
-
-If you are wanting to open-source your website, we suggest using the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) for content and the [MIT License](http://creativecommons.org/licenses/MIT/) for code. In which case you'd probably want to use the following as your license:
-
-	Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) and code licensed under the [MIT License](http://creativecommons.org/licenses/MIT/), © [Your Name](http://your.website)
-
-If you are wanting to close-source your website, we'd suggest using the following:
-
-	Copyright [Your Name](http://your.website). All rights reserved.
-
-Other included things such as themes and libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
-
-Thank You. The DocPad & MDM teams love you. <3
+	Copyright 2013 [Arkivum](http://arkivum.com/). All rights reserved.
