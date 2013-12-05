@@ -91,5 +91,4 @@ arkivum.docpad uses the family of Din Pro fonts as per Arkivum's branding. These
 
 
 ## License
-
-	Copyright 2013 [Arkivum](http://arkivum.com/). All rights reserved.
+Copyright 2013 [Arkivum](http://arkivum.com/). All rights reserved.
