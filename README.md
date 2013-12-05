@@ -76,6 +76,10 @@ The remainder of the SVG icons such as the social or contact icons originate fro
 
 arkivum.docpad uses the family of Din Pro fonts as per Arkivum's branding. These are locaed at [`src/files/fonts`](https://github.com/MassDistributionMedia/arkivum.docpad/tree/master/src/files/fonts).
 
+## UK Privacy Compliance
+[CookieConsent](https://github.com/silktide/cookieconsent#cookie-consent) works by detecting a cookie containing the user's consent choice. Due to inconsistency problems with detection, a timer (in [`right-sidebar.html.eco`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/partials/right-sidebar.html.eco)) was added to manually detect the cookie. YouTube video, LeadForensics, Google Analytics, ShareThis are all linked to CookieConsent.
+
+
 ## How to handle common errors
 
 #### I'm getting EMFILE errors
