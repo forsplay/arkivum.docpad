@@ -82,6 +82,9 @@ arkivum.docpad uses the family of Din Pro fonts as per Arkivum's branding. These
 
 ## How to handle common errors
 
+#### Latest DocPad version is failing
+
+
 #### I'm getting EMFILE errors
 
 [See here for the reason why and the solution](http://docpad.org/docs/troubleshoot#i-m-getting-emfile-too-many-open-files)
