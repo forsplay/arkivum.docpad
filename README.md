@@ -89,7 +89,9 @@ See [Issue #4](https://github.com/MassDistributionMedia/arkivum.docpad/issues/4)
 ## How to handle common errors
 
 #### Latest DocPad version is failing
-
+1. Delete the `/node_modules` folder.
+1. In `package.json` set the DocPad dependency to the last known safe/working version. 
+1. Run the command `npm install` then `docpad run`.
 
 #### I'm getting EMFILE errors
 
