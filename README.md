@@ -53,7 +53,7 @@ For example the ["post"](https://github.com/MassDistributionMedia/arkivum.docpad
 layout: default
 ---
 ```
-The default template makes up the header, footer and containing structure for the sidebar partials and inner `@content`.
+The default template makes up the header, footer and containing structure for the sidebar partials and inner [`@content`](https://github.com/MassDistributionMedia/arkivum.docpad/blob/master/src/layouts/default.html.eco#L98).
 
 #### Sidebar partials
 
