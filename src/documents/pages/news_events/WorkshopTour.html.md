@@ -2,7 +2,7 @@
 title: Data Storage and Preservation Workshop Tour
 layout: page
 tags: ['news']
-postDate: 12/Jun/2013 
+postDate: 2013-06-12 
 desc: Commencing 24th June 2013 - book now to secure your place ...
 ```
 
