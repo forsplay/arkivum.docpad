@@ -18,16 +18,16 @@ docpadConfig = {
 			oldUrls: ['']
 
 			# The default title of our website
-			title: "Arkivum"
+			title: "Arkivum - Every bit archived"
 
 			# The website description (for SEO)
 			description: """
-				Every bit archived. 
+				Long term data archiving managed service 
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				long term data storage, guaranteed archive, genomics archive, healthcare data archive, research data archive, digital heritage archive, sap archive, Janet archive, Janet archiving, guaranteed data storage, n3 archive, gcloud archive, g-cloud archive, cloudstore archive,  data archiving managed service, digital archive managed service, cristie archive, s3 archive, tmf archive, etmf archive
+				long term data storage, genomics archive, healthcare data archive, research data archive, digital heritage archive, Janet archiving, guaranteed data storage, gcloud archive, data archiving managed service, digital archive managed service, etmf archive
 				"""
 
 			# The website author's name
