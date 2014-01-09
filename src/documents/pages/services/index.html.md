@@ -1,5 +1,5 @@
 ```
-title: Archive-as-a-Service
+title: Archive as a Service
 layout: page
 menuOrder: 1
 mobileMenu: 1
