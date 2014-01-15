@@ -47,7 +47,8 @@
 		settings: {
 			consenttype: "implicit",
 			hideprivacysettingstab: true,
-			disableallsites: true
+			disableallsites: true,
+			bannerPosition: "bottom"
 		}
 	});
 	// ]]>
