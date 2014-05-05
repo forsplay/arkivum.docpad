@@ -15,6 +15,7 @@ Arkivum.com uses the following DocPad plugins:
 - [docpad-plugin-ghpages](https://github.com/docpad/docpad-plugin-ghpages)
 - [docpad-plugin-iconmonstr](https://github.com/mikeumus/docpad-plugin-iconmonstr)
 - [docpad-plugin-sitemap](https://github.com/docpad/docpad-plugin-sitemap)
+- [docpad-plugin-menu](https://github.com/sergeche/docpad-plugin-menu) - Customized in `plugins` folder
 
 and the [moment.js](https://github.com/moment/moment) module.
 
